@@ -1,5 +1,12 @@
+require:
+  - rubocop-performance
+  - rubocop-rake
+  - rubocop-rspec
+  - rubocop-thread_safety
+
 AllCops:
   TargetRubyVersion: 3.0
+  NewCops: enable
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
