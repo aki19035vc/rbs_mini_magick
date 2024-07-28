@@ -26,12 +26,12 @@ jobs:
       - name: Setup
         run: bin/setup
       - name: Run rubocop
-        run: rake rubocop
+        run: bundle exec rake rubocop
       - name: Run rspec
-        run: rake rspec
+        run: bundle exec rake rspec
       - name: Run yard
-        run: rake yard
+        run: bundle exec rake yard
       - name: Run typecheck for lib
-        run: rake typecheck:lib
+        run: bundle exec rake typecheck:lib
       - name: Run typecheck for all typecheck/<version> dirs
-        run: rake typecheck:all_version
+        run: bundle exec rake typecheck:all_versions

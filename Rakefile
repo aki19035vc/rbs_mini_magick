@@ -34,6 +34,8 @@ task :store_image_magick_usages do
   puts "Store ImageMagick usages => #{output_dir}"
 end
 
+# @param version [String]
+# @return [Integer]
 def typecheck_any_version(version) # rubocop:disable Metrics/MethodLength
   chdir = Pathname("#{__dir__}/typecheck/#{version}")
   unless chdir.exist?
@@ -41,7 +43,9 @@ def typecheck_any_version(version) # rubocop:disable Metrics/MethodLength
     return 1
   end
 
-  if system("bundle", "exec", "steep", "check", chdir: chdir.to_s)
+  system("bundle", "exec", "rbs", "collection", "install", "--frozen", chdir: chdir.to_s)
+
+  if system("bundle", "exec", "steep", "check", "-j2", chdir: chdir.to_s)
     puts "Typecheck succeeded for version #{version}"
     0
   else
@@ -65,7 +69,7 @@ namespace :typecheck do
   end
 
   desc "Typecheck for all typecheck/<version> dirs"
-  task :all_version, ["version"] do |_, _args|
+  task :all_versions, ["version"] do |_, _args|
     %w[5.0].map do |version|
       puts "=" * 100
       typecheck_any_version(version)
