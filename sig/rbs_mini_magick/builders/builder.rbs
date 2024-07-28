@@ -1,0 +1,25 @@
+module RbsMiniMagick
+  module Builders
+    class Builder
+      type options = Array[::RbsMiniMagick::ImageMagick::CommandLineOption]
+
+      def initialize: (mini_magick_version: Gem::Version) -> void
+
+      def run: () -> String
+
+      private
+
+      attr_reader mini_magick_version: Gem::Version
+
+      @options_by_tool: Hash[String, options]
+
+      @mogrify_options: options
+
+      def options_by_tool: () -> Hash[String, options]
+
+      def mogrify_options: () -> options
+
+      def format_rbs: (String) -> String
+    end
+  end
+end

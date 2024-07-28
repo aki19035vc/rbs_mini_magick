@@ -4,13 +4,12 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "mini_magick", "4.13.2"
-
-gem "rake"
-gem "rspec"
-gem "rubocop"
-gem "rubocop-performance"
-gem "rubocop-rake"
-gem "rubocop-rspec"
-gem "rubocop-thread_safety"
-gem "yard"
+gem "rake", require: false
+gem "rspec", require: false
+gem "rubocop", require: false
+gem "rubocop-performance", require: false
+gem "rubocop-rake", require: false
+gem "rubocop-rspec", require: false
+gem "rubocop-thread_safety", require: false
+gem "steep", require: false
+gem "yard", require: false

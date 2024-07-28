@@ -1,0 +1,13 @@
+module RbsMiniMagick
+  module ImageMagick
+    class UsageFetcher
+      def initialize: (tool_name: String) -> void
+
+      def run: () -> String
+
+      private
+
+      attr_reader tool_name: String
+    end
+  end
+end

@@ -1,0 +1,15 @@
+module RbsMiniMagick
+  module Builders
+    class ImageClass
+      type options = Array[::RbsMiniMagick::ImageMagick::CommandLineOption]
+
+      def initialize: (mogrify_options: Array[::RbsMiniMagick::ImageMagick::CommandLineOption]) -> void
+
+      private
+
+      attr_reader mogrify_options: options
+
+      def delegated_mogrify_methods: () -> Array[String]
+    end
+  end
+end

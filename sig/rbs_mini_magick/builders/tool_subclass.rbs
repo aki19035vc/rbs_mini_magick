@@ -1,0 +1,11 @@
+module RbsMiniMagick
+  module Builders
+    class ToolSubclass
+      def initialize: (tool_name: String) -> void
+
+      private
+
+      attr_reader tool_name: String
+    end
+  end
+end

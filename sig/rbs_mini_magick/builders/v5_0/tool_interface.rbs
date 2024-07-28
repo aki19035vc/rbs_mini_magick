@@ -1,0 +1,7 @@
+module RbsMiniMagick
+  module Builders
+    class ToolInterface
+      include _V5_0
+    end
+  end
+end

@@ -1,0 +1,5 @@
+module RbsMiniMagick
+  module ImageMagick
+    TOOL_NAMES: Array[String]
+  end
+end

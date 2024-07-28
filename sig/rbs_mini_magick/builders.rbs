@@ -1,4 +1,4 @@
 module RbsMiniMagick
-  class Error < StandardError
+  module Builders
   end
 end

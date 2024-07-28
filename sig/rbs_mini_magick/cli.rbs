@@ -1,0 +1,25 @@
+module RbsMiniMagick
+  class CLI
+    def initialize: (Array[String], io: IO) -> void
+
+    def run: () -> Integer
+
+    def help: () -> String
+
+    private
+
+    attr_reader args: Array[String]
+
+    attr_reader options: Hash[Symbol, untyped]
+
+    attr_reader io: IO
+
+    def parse!: () -> void
+
+    def parser: () -> OptionParser
+
+    def help?: () -> bool
+
+    def version?: () -> bool
+  end
+end

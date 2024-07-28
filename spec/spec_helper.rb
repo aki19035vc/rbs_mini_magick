@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
+# require "debug"
+
 require "rbs_mini_magick"
+
+require_relative "support/shared_context"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

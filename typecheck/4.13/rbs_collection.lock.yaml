@@ -1,0 +1,24 @@
+---
+path: ".gem_rbs_collection"
+gems:
+- name: mini_magick
+  version: '4.13'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: c33ea3cd90fcded41747ca5cdcc8a268b5c6d69b
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: pathname
+  version: '0'
+  source:
+    type: stdlib
+- name: tempfile
+  version: '0'
+  source:
+    type: stdlib
+- name: uri
+  version: '0'
+  source:
+    type: stdlib
+gemfile_lock_path: Gemfile.lock

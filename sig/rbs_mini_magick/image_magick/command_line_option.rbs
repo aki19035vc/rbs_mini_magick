@@ -1,0 +1,17 @@
+module RbsMiniMagick
+  module ImageMagick
+    class CommandLineOption
+      attr_reader normalized_name: String
+
+      def initialize: (name: String, args: Array[String]) -> void
+
+      def to_method_signature: (String) -> String
+
+      private
+
+      attr_reader name: String
+
+      attr_reader args: Array[String]
+    end
+  end
+end

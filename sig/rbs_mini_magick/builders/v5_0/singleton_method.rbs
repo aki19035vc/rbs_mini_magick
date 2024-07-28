@@ -1,0 +1,7 @@
+module RbsMiniMagick
+  module Builders
+    class SingletonMethod
+      include _V5_0
+    end
+  end
+end
