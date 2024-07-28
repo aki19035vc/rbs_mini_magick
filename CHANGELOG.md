@@ -1,5 +1,5 @@
-## [Unreleased]
+# CHANGELOG
 
-## [0.1.0] - 2024-07-20
+## [0.1.0] - 2024-07-28
 
 - Initial release
