@@ -1,6 +1,10 @@
 ---
 path: ".gem_rbs_collection"
 gems:
+- name: fileutils
+  version: '0'
+  source:
+    type: stdlib
 - name: json
   version: '0'
   source:

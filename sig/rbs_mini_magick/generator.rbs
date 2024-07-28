@@ -6,8 +6,10 @@ module RbsMiniMagick
 
     private
 
-    attr_reader output_path: Pathname
-
     attr_reader mini_magick_version: Gem::Version
+
+    attr_reader output_dir: Pathname
+
+    attr_reader output_path: Pathname
   end
 end
