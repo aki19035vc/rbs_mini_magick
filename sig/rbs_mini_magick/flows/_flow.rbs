@@ -1,0 +1,7 @@
+module RbsMiniMagick
+  module Flows
+    interface _Flow
+      def run: (Flows::State) -> State
+    end
+  end
+end

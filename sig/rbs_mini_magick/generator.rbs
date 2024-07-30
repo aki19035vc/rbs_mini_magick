@@ -1,12 +1,12 @@
 module RbsMiniMagick
   class Generator
-    def initialize: (mini_magick_version: Gem::Version?, output_dir: String?) -> void
+    def initialize: (mini_magick_version: String?, output_dir: String?) -> void
 
     def run: () -> void
 
     private
 
-    attr_reader mini_magick_version: Gem::Version
+    attr_reader mini_magick_version: String?
 
     attr_reader output_dir: Pathname
 

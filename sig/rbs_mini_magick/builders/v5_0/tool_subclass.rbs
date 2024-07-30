@@ -1,7 +1,0 @@
-module RbsMiniMagick
-  module Builders
-    class ToolSubclass
-      include _V5_0
-    end
-  end
-end

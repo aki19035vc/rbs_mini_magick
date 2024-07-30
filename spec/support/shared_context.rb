@@ -23,12 +23,13 @@ shared_context "with ImageMagick usage mock" do
   let(:image_magick_dir) { data_dir.join("image_magick_#{image_magick_version}") }
 
   before do
-    RbsMiniMagick::ImageMagick::TOOL_NAMES.each do |tool_name|
-      usage = image_magick_dir.join("usages/#{tool_name}.txt").read
+    image_magick_dir.join("usages").glob("*.txt").each do |path|
+      usage = path.read
       fetcher = instance_double(RbsMiniMagick::ImageMagick::UsageFetcher)
       allow(fetcher).to receive(:run).and_return(usage)
       allow(RbsMiniMagick::ImageMagick::UsageFetcher).to(
-        receive(:new).with(tool_name: tool_name).and_return(fetcher)
+        receive(:new).with(tool_name: path.basename.to_s.delete_suffix(".txt"))
+                     .and_return(fetcher)
       )
     end
   end

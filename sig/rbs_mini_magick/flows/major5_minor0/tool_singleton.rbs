@@ -1,0 +1,15 @@
+module RbsMiniMagick
+  module Flows
+    module Major5Minor0
+      class ToolSingleton
+        include _Flow
+
+        def initialize: (name: String) -> void
+
+        private
+
+        attr_reader name: String
+      end
+    end
+  end
+end

@@ -1,7 +1,0 @@
-module RbsMiniMagick
-  module Builders
-    interface _V5_0
-      def v5_0: () -> String
-    end
-  end
-end

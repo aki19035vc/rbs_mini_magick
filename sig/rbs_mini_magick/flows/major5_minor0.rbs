@@ -1,0 +1,9 @@
+module RbsMiniMagick
+  module Flows
+    module Major5Minor0
+      TOOL_NAMES: Array[String]
+
+      FLOWS: Array[_Flow]
+    end
+  end
+end

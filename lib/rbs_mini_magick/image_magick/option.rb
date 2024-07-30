@@ -2,8 +2,8 @@
 
 module RbsMiniMagick
   module ImageMagick
-    # RbsMiniMagick::ImageMagick::CommandLineOption
-    class CommandLineOption
+    # RbsMiniMagick::ImageMagick::Option
+    class Option
       # @!attribute [r] normalized_name
       # @return [String]
       attr_reader :normalized_name
@@ -17,12 +17,9 @@ module RbsMiniMagick
         @normalized_name = name.delete_prefix("-").gsub(/\W/, "_")
       end
 
-      # @param return_type [String]
-      # @return [String]
-      def to_method_signature(return_type)
-        sig_args = args.empty? ? "" : "*_ToS args"
-
-        "def #{normalized_name}: (#{sig_args}) -> #{return_type}"
+      # @return [Boolean]
+      def args_empty?
+        args.empty?
       end
 
       private

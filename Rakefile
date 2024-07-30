@@ -25,7 +25,7 @@ desc "Store ImageMagick usages for test"
 task :store_image_magick_usages do
   output_dir = Pathname(__dir__).join("spec/support/data/image_magick_#{MiniMagick.cli_version}/usages")
   FileUtils.mkdir_p(output_dir)
-  RbsMiniMagick::ImageMagick::TOOL_NAMES.each do |tool_name|
+  RbsMiniMagick::Flows::Major5Minor0::TOOL_NAMES.each do |tool_name|
     File.write(
       output_dir.join("#{tool_name}.txt"),
       RbsMiniMagick::ImageMagick::UsageFetcher.new(tool_name: tool_name).run

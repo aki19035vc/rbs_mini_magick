@@ -3,11 +3,11 @@
 module RbsMiniMagick
   # RbsMiniMagick::Generator
   class Generator
-    # @param mini_magick_version [Gem::Version, nil]
+    # @param mini_magick_version [String, nil]
     # @param output_dir [String, nil]
     # @return [void]
     def initialize(mini_magick_version:, output_dir:)
-      @mini_magick_version = mini_magick_version || MiniMagick.version
+      @mini_magick_version = mini_magick_version
       @output_dir = output_dir&.then { Pathname(_1) } ||
                     Bundler.root.join("sig", "rbs_mini_magick") # steep:ignore
       @output_path = @output_dir.join("mini_magick.rbs")
@@ -15,7 +15,7 @@ module RbsMiniMagick
 
     # @return [void]
     def run
-      rbs = Builders::Builder.new(mini_magick_version: mini_magick_version).run
+      rbs = Builder.new(mini_magick_version: mini_magick_version).run
       FileUtils.mkdir_p(output_dir.to_s)
       File.write(output_path.to_s, rbs)
     end
@@ -23,7 +23,7 @@ module RbsMiniMagick
     private
 
     # @!attribute [r] mini_magick_version
-    # @return [Gem::Version]
+    # @return [String, nil]
     attr_reader :mini_magick_version
     # @!attribute [r] output_dir
     # @return [Pathname]

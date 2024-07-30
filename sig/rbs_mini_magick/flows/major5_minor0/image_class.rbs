@@ -1,0 +1,11 @@
+module RbsMiniMagick
+  module Flows
+    module Major5Minor0
+      class ImageClass
+        include _Flow
+
+        def mogrify_method: (ImageMagick::Option) -> String
+      end
+    end
+  end
+end
