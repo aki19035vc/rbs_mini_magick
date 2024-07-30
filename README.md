@@ -1,5 +1,7 @@
 # RbsMiniMagick
 
+[![Gem Version](https://badge.fury.io/rb/rbs_mini_magick.svg)](https://badge.fury.io/rb/rbs_mini_magick)
+
 Generate rbs for MiniMagick gem according to the version of MiniMagick and ImageMagick you use.
 
 ## Installation
