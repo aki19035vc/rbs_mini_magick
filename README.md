@@ -1,5 +1,7 @@
 # RbsMiniMagick
 
+Generate rbs for MiniMagick gem according to the version of MiniMagick and ImageMagick you use.
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
@@ -16,8 +18,18 @@ $ gem install rbs_mini_magick
 
 ## Usage
 
-```sh
+Generate rbs for the MiniMagick gem in the `sig/rbs_mini_magick` directory.
+
+```
 $ bundle exec rbs-mini-magick generate
+```
+
+If you want to change the output directory, you can use the `--output-dir` option.
+
+Other available options can be referenced with `--help`.
+
+```
+$ bundle exec rbs-mini-magick generate --help
 ```
 
 ## Development
