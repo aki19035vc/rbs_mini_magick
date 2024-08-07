@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rbs_mini_magick (0.2.0)
+    rbs_mini_magick (0.3.0)
       mini_magick (~> 5.0)
       rbs (>= 3)
 
