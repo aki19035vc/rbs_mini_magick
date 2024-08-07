@@ -18,19 +18,19 @@ module RbsMiniMagick
           rbs = <<~RBS
             module MiniMagick
               class Image
-                def initialize: (_ToS input_path, ?Tempfile? tempfile) ?{ (Tool & _Mogrify[Tool]) -> void } -> void
+                def initialize: (_ToS input_path, ?Tempfile? tempfile) ?{ (Tool & _Mogrify) -> void } -> void
                               | ...
 
-                def combine_options: () { (Tool & _Mogrify[Tool]) -> void } -> self
+                def combine_options: () { (Tool & _Mogrify) -> void } -> self
                                    | ...
 
-                def composite: (instance other_image, ?String output_extension, ?untyped? mask) ?{ (Tool & _Composite[Tool]) -> void } -> instance
+                def composite: (instance other_image, ?String output_extension, ?untyped? mask) ?{ (Tool & _Composite) -> void } -> instance
                              | ...
 
-                def identify: () ?{ (Tool & _Identify[Tool]) -> void } -> String
+                def identify: () ?{ (Tool & _Identify) -> void } -> String
                             | ...
 
-                def mogrify: (?Integer? page) ?{ (Tool & _Mogrify[Tool]) -> void } -> self
+                def mogrify: (?Integer? page) ?{ (Tool & _Mogrify) -> void } -> self
                            | ...
 
                 #{mogrify_methods}
