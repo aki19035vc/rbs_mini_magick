@@ -22,7 +22,7 @@ module RbsMiniMagick
                                      .uniq.join("\n")
           rbs = <<~RBS
             module MiniMagick
-              interface #{interface_name}[T]
+              interface #{interface_name}
                 #{option_methods}
               end
             end
@@ -42,7 +42,7 @@ module RbsMiniMagick
         def option_method(option)
           args = option.args_empty? ? "" : "*_ToS args"
 
-          "def #{option.normalized_name}: (#{args}) -> T"
+          "def #{option.normalized_name}: (#{args}) -> self"
         end
       end
     end

@@ -19,8 +19,8 @@ module RbsMiniMagick
           args = "?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options"
           rbs = <<~RBS
             module MiniMagick
-              def self.#{name}: (#{args}) -> (Tool & #{interface_name}[Tool])
-                              | (#{args}) { (Tool & #{interface_name}[Tool]) -> void } -> String
+              def self.#{name}: (#{args}) -> (Tool & #{interface_name})
+                              | (#{args}) { (Tool & #{interface_name}) -> void } -> String
                               | ...
             end
           RBS

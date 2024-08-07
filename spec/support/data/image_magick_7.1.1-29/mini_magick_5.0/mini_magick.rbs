@@ -1,2338 +1,2338 @@
 module MiniMagick
-  interface _Animate[T]
-    def alpha: (*_ToS args) -> T
+  interface _Animate
+    def alpha: (*_ToS args) -> self
 
-    def authenticate: (*_ToS args) -> T
+    def authenticate: (*_ToS args) -> self
 
-    def backdrop: () -> T
+    def backdrop: () -> self
 
-    def colormap: (*_ToS args) -> T
+    def colormap: (*_ToS args) -> self
 
-    def colorspace: (*_ToS args) -> T
+    def colorspace: (*_ToS args) -> self
 
-    def decipher: (*_ToS args) -> T
+    def decipher: (*_ToS args) -> self
 
-    def define: (*_ToS args) -> T
+    def define: (*_ToS args) -> self
 
-    def delay: (*_ToS args) -> T
+    def delay: (*_ToS args) -> self
 
-    def density: (*_ToS args) -> T
+    def density: (*_ToS args) -> self
 
-    def depth: (*_ToS args) -> T
+    def depth: (*_ToS args) -> self
 
-    def display: (*_ToS args) -> T
+    def display: (*_ToS args) -> self
 
-    def dispose: (*_ToS args) -> T
+    def dispose: (*_ToS args) -> self
 
-    def dither: (*_ToS args) -> T
+    def dither: (*_ToS args) -> self
 
-    def filter: (*_ToS args) -> T
+    def filter: (*_ToS args) -> self
 
-    def format: (*_ToS args) -> T
+    def format: (*_ToS args) -> self
 
-    def gamma: (*_ToS args) -> T
+    def gamma: (*_ToS args) -> self
 
-    def geometry: (*_ToS args) -> T
+    def geometry: (*_ToS args) -> self
 
-    def gravity: (*_ToS args) -> T
+    def gravity: (*_ToS args) -> self
 
-    def identify: () -> T
+    def identify: () -> self
 
-    def immutable: () -> T
+    def immutable: () -> self
 
-    def interlace: (*_ToS args) -> T
+    def interlace: (*_ToS args) -> self
 
-    def interpolate: (*_ToS args) -> T
+    def interpolate: (*_ToS args) -> self
 
-    def limit: (*_ToS args) -> T
+    def limit: (*_ToS args) -> self
 
-    def loop: (*_ToS args) -> T
+    def loop: (*_ToS args) -> self
 
-    def matte: () -> T
+    def matte: () -> self
 
-    def map: (*_ToS args) -> T
+    def map: (*_ToS args) -> self
 
-    def monitor: () -> T
+    def monitor: () -> self
 
-    def pause: () -> T
+    def pause: () -> self
 
-    def page: (*_ToS args) -> T
+    def page: (*_ToS args) -> self
 
-    def quantize: (*_ToS args) -> T
+    def quantize: (*_ToS args) -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def remote: (*_ToS args) -> T
+    def remote: (*_ToS args) -> self
 
-    def repage: (*_ToS args) -> T
+    def repage: (*_ToS args) -> self
 
-    def respect_parentheses: (*_ToS args) -> T
+    def respect_parentheses: (*_ToS args) -> self
 
-    def sampling_factor: (*_ToS args) -> T
+    def sampling_factor: (*_ToS args) -> self
 
-    def scenes: (*_ToS args) -> T
+    def scenes: (*_ToS args) -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def set: (*_ToS args) -> T
+    def set: (*_ToS args) -> self
 
-    def size: (*_ToS args) -> T
+    def size: (*_ToS args) -> self
 
-    def support: (*_ToS args) -> T
+    def support: (*_ToS args) -> self
 
-    def transparent_color: (*_ToS args) -> T
+    def transparent_color: (*_ToS args) -> self
 
-    def treedepth: (*_ToS args) -> T
+    def treedepth: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def visual: (*_ToS args) -> T
+    def visual: (*_ToS args) -> self
 
-    def virtual_pixel: (*_ToS args) -> T
+    def virtual_pixel: (*_ToS args) -> self
 
-    def window: (*_ToS args) -> T
+    def window: (*_ToS args) -> self
 
-    def channel: (*_ToS args) -> T
+    def channel: (*_ToS args) -> self
 
-    def colors: (*_ToS args) -> T
+    def colors: (*_ToS args) -> self
 
-    def crop: (*_ToS args) -> T
+    def crop: (*_ToS args) -> self
 
-    def extent: (*_ToS args) -> T
+    def extent: (*_ToS args) -> self
 
-    def extract: (*_ToS args) -> T
+    def extract: (*_ToS args) -> self
 
-    def monochrome: () -> T
+    def monochrome: () -> self
 
-    def resample: (*_ToS args) -> T
+    def resample: (*_ToS args) -> self
 
-    def resize: (*_ToS args) -> T
+    def resize: (*_ToS args) -> self
 
-    def rotate: (*_ToS args) -> T
+    def rotate: (*_ToS args) -> self
 
-    def strip: () -> T
+    def strip: () -> self
 
-    def thumbnail: (*_ToS args) -> T
+    def thumbnail: (*_ToS args) -> self
 
-    def trim: () -> T
+    def trim: () -> self
 
-    def coalesce: () -> T
+    def coalesce: () -> self
 
-    def flatten: () -> T
+    def flatten: () -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
 
-    def version: () -> T
+    def version: () -> self
 
-    def mattecolor_: (*_ToS args) -> T
+    def mattecolor_: (*_ToS args) -> self
 
-    def iconic_: (*_ToS args) -> T
+    def iconic_: (*_ToS args) -> self
   end
 end
 
 module MiniMagick
-  interface _Compare[T]
-    def alpha: (*_ToS args) -> T
+  interface _Compare
+    def alpha: (*_ToS args) -> self
 
-    def authenticate: (*_ToS args) -> T
+    def authenticate: (*_ToS args) -> self
 
-    def background: (*_ToS args) -> T
+    def background: (*_ToS args) -> self
 
-    def colorspace: (*_ToS args) -> T
+    def colorspace: (*_ToS args) -> self
 
-    def compose: (*_ToS args) -> T
+    def compose: (*_ToS args) -> self
 
-    def compress: (*_ToS args) -> T
+    def compress: (*_ToS args) -> self
 
-    def decipher: (*_ToS args) -> T
+    def decipher: (*_ToS args) -> self
 
-    def define: (*_ToS args) -> T
+    def define: (*_ToS args) -> self
 
-    def density: (*_ToS args) -> T
+    def density: (*_ToS args) -> self
 
-    def depth: (*_ToS args) -> T
+    def depth: (*_ToS args) -> self
 
-    def dissimilarity_threshold: (*_ToS args) -> T
+    def dissimilarity_threshold: (*_ToS args) -> self
 
-    def encipher: (*_ToS args) -> T
+    def encipher: (*_ToS args) -> self
 
-    def extract: (*_ToS args) -> T
+    def extract: (*_ToS args) -> self
 
-    def format: (*_ToS args) -> T
+    def format: (*_ToS args) -> self
 
-    def fuzz: (*_ToS args) -> T
+    def fuzz: (*_ToS args) -> self
 
-    def gravity: (*_ToS args) -> T
+    def gravity: (*_ToS args) -> self
 
-    def highlight_color: (*_ToS args) -> T
+    def highlight_color: (*_ToS args) -> self
 
-    def identify: () -> T
+    def identify: () -> self
 
-    def interlace: (*_ToS args) -> T
+    def interlace: (*_ToS args) -> self
 
-    def limit: (*_ToS args) -> T
+    def limit: (*_ToS args) -> self
 
-    def lowlight_color: (*_ToS args) -> T
+    def lowlight_color: (*_ToS args) -> self
 
-    def metric: (*_ToS args) -> T
+    def metric: (*_ToS args) -> self
 
-    def monitor: () -> T
+    def monitor: () -> self
 
-    def negate: () -> T
+    def negate: () -> self
 
-    def passphrase: (*_ToS args) -> T
+    def passphrase: (*_ToS args) -> self
 
-    def precision: (*_ToS args) -> T
+    def precision: (*_ToS args) -> self
 
-    def profile: (*_ToS args) -> T
+    def profile: (*_ToS args) -> self
 
-    def quality: (*_ToS args) -> T
+    def quality: (*_ToS args) -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def quantize: (*_ToS args) -> T
+    def quantize: (*_ToS args) -> self
 
-    def read_mask: (*_ToS args) -> T
+    def read_mask: (*_ToS args) -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def respect_parentheses: (*_ToS args) -> T
+    def respect_parentheses: (*_ToS args) -> self
 
-    def sampling_factor: (*_ToS args) -> T
+    def sampling_factor: (*_ToS args) -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def set: (*_ToS args) -> T
+    def set: (*_ToS args) -> self
 
-    def repage: (*_ToS args) -> T
+    def repage: (*_ToS args) -> self
 
-    def similarity_threshold: (*_ToS args) -> T
+    def similarity_threshold: (*_ToS args) -> self
 
-    def size: (*_ToS args) -> T
+    def size: (*_ToS args) -> self
 
-    def subimage_search: () -> T
+    def subimage_search: () -> self
 
-    def synchronize: () -> T
+    def synchronize: () -> self
 
-    def taint: () -> T
+    def taint: () -> self
 
-    def transparent_color: (*_ToS args) -> T
+    def transparent_color: (*_ToS args) -> self
 
-    def type: (*_ToS args) -> T
+    def type: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def version: () -> T
+    def version: () -> self
 
-    def virtual_pixel: (*_ToS args) -> T
+    def virtual_pixel: (*_ToS args) -> self
 
-    def write_mask: (*_ToS args) -> T
+    def write_mask: (*_ToS args) -> self
 
-    def auto_orient: () -> T
+    def auto_orient: () -> self
 
-    def brightness_contrast: (*_ToS args) -> T
+    def brightness_contrast: (*_ToS args) -> self
 
-    def distort: (*_ToS args) -> T
+    def distort: (*_ToS args) -> self
 
-    def level: (*_ToS args) -> T
+    def level: (*_ToS args) -> self
 
-    def resize: (*_ToS args) -> T
+    def resize: (*_ToS args) -> self
 
-    def rotate: (*_ToS args) -> T
+    def rotate: (*_ToS args) -> self
 
-    def sigmoidal_contrast: (*_ToS args) -> T
+    def sigmoidal_contrast: (*_ToS args) -> self
 
-    def trim: () -> T
+    def trim: () -> self
 
-    def write: (*_ToS args) -> T
+    def write: (*_ToS args) -> self
 
-    def separate: () -> T
+    def separate: () -> self
 
-    def crop: (*_ToS args) -> T
+    def crop: (*_ToS args) -> self
 
-    def delete: (*_ToS args) -> T
+    def delete: (*_ToS args) -> self
 
-    def channel: (*_ToS args) -> T
+    def channel: (*_ToS args) -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
   end
 end
 
 module MiniMagick
-  interface _Composite[T]
-    def affine: (*_ToS args) -> T
+  interface _Composite
+    def affine: (*_ToS args) -> self
 
-    def alpha: (*_ToS args) -> T
+    def alpha: (*_ToS args) -> self
 
-    def authenticate: (*_ToS args) -> T
+    def authenticate: (*_ToS args) -> self
 
-    def blue_primary: (*_ToS args) -> T
+    def blue_primary: (*_ToS args) -> self
 
-    def colorspace: (*_ToS args) -> T
+    def colorspace: (*_ToS args) -> self
 
-    def comment: (*_ToS args) -> T
+    def comment: (*_ToS args) -> self
 
-    def compose: (*_ToS args) -> T
+    def compose: (*_ToS args) -> self
 
-    def compress: (*_ToS args) -> T
+    def compress: (*_ToS args) -> self
 
-    def define: (*_ToS args) -> T
+    def define: (*_ToS args) -> self
 
-    def depth: (*_ToS args) -> T
+    def depth: (*_ToS args) -> self
 
-    def density: (*_ToS args) -> T
+    def density: (*_ToS args) -> self
 
-    def display: (*_ToS args) -> T
+    def display: (*_ToS args) -> self
 
-    def dispose: (*_ToS args) -> T
+    def dispose: (*_ToS args) -> self
 
-    def dither: (*_ToS args) -> T
+    def dither: (*_ToS args) -> self
 
-    def encoding: (*_ToS args) -> T
+    def encoding: (*_ToS args) -> self
 
-    def endian: (*_ToS args) -> T
+    def endian: (*_ToS args) -> self
 
-    def filter: (*_ToS args) -> T
+    def filter: (*_ToS args) -> self
 
-    def font: (*_ToS args) -> T
+    def font: (*_ToS args) -> self
 
-    def format: (*_ToS args) -> T
+    def format: (*_ToS args) -> self
 
-    def gravity: (*_ToS args) -> T
+    def gravity: (*_ToS args) -> self
 
-    def green_primary: (*_ToS args) -> T
+    def green_primary: (*_ToS args) -> self
 
-    def interlace: (*_ToS args) -> T
+    def interlace: (*_ToS args) -> self
 
-    def interpolate: (*_ToS args) -> T
+    def interpolate: (*_ToS args) -> self
 
-    def label: (*_ToS args) -> T
+    def label: (*_ToS args) -> self
 
-    def limit: (*_ToS args) -> T
+    def limit: (*_ToS args) -> self
 
-    def matte: () -> T
+    def matte: () -> self
 
-    def monitor: () -> T
+    def monitor: () -> self
 
-    def page: (*_ToS args) -> T
+    def page: (*_ToS args) -> self
 
-    def pointsize: (*_ToS args) -> T
+    def pointsize: (*_ToS args) -> self
 
-    def quality: (*_ToS args) -> T
+    def quality: (*_ToS args) -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def red_primary: (*_ToS args) -> T
+    def red_primary: (*_ToS args) -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def respect_parentheses: (*_ToS args) -> T
+    def respect_parentheses: (*_ToS args) -> self
 
-    def sampling_factor: (*_ToS args) -> T
+    def sampling_factor: (*_ToS args) -> self
 
-    def scene: (*_ToS args) -> T
+    def scene: (*_ToS args) -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def size: (*_ToS args) -> T
+    def size: (*_ToS args) -> self
 
-    def support: (*_ToS args) -> T
+    def support: (*_ToS args) -> self
 
-    def synchronize: () -> T
+    def synchronize: () -> self
 
-    def taint: () -> T
+    def taint: () -> self
 
-    def transparent_color: (*_ToS args) -> T
+    def transparent_color: (*_ToS args) -> self
 
-    def treedepth: (*_ToS args) -> T
+    def treedepth: (*_ToS args) -> self
 
-    def tile: () -> T
+    def tile: () -> self
 
-    def units: (*_ToS args) -> T
+    def units: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def virtual_pixel: (*_ToS args) -> T
+    def virtual_pixel: (*_ToS args) -> self
 
-    def white_point: (*_ToS args) -> T
+    def white_point: (*_ToS args) -> self
 
-    def blend: (*_ToS args) -> T
+    def blend: (*_ToS args) -> self
 
-    def border: (*_ToS args) -> T
+    def border: (*_ToS args) -> self
 
-    def bordercolor: (*_ToS args) -> T
+    def bordercolor: (*_ToS args) -> self
 
-    def channel: (*_ToS args) -> T
+    def channel: (*_ToS args) -> self
 
-    def colors: (*_ToS args) -> T
+    def colors: (*_ToS args) -> self
 
-    def decipher: (*_ToS args) -> T
+    def decipher: (*_ToS args) -> self
 
-    def displace: (*_ToS args) -> T
+    def displace: (*_ToS args) -> self
 
-    def dissolve: (*_ToS args) -> T
+    def dissolve: (*_ToS args) -> self
 
-    def distort: (*_ToS args) -> T
+    def distort: (*_ToS args) -> self
 
-    def encipher: (*_ToS args) -> T
+    def encipher: (*_ToS args) -> self
 
-    def extract: (*_ToS args) -> T
+    def extract: (*_ToS args) -> self
 
-    def geometry: (*_ToS args) -> T
+    def geometry: (*_ToS args) -> self
 
-    def identify: () -> T
+    def identify: () -> self
 
-    def monochrome: () -> T
+    def monochrome: () -> self
 
-    def negate: () -> T
+    def negate: () -> self
 
-    def profile: (*_ToS args) -> T
+    def profile: (*_ToS args) -> self
 
-    def quantize: (*_ToS args) -> T
+    def quantize: (*_ToS args) -> self
 
-    def repage: (*_ToS args) -> T
+    def repage: (*_ToS args) -> self
 
-    def rotate: (*_ToS args) -> T
+    def rotate: (*_ToS args) -> self
 
-    def resize: (*_ToS args) -> T
+    def resize: (*_ToS args) -> self
 
-    def sharpen: (*_ToS args) -> T
+    def sharpen: (*_ToS args) -> self
 
-    def shave: (*_ToS args) -> T
+    def shave: (*_ToS args) -> self
 
-    def stegano: (*_ToS args) -> T
+    def stegano: (*_ToS args) -> self
 
-    def stereo: (*_ToS args) -> T
+    def stereo: (*_ToS args) -> self
 
-    def strip: () -> T
+    def strip: () -> self
 
-    def thumbnail: (*_ToS args) -> T
+    def thumbnail: (*_ToS args) -> self
 
-    def transform: () -> T
+    def transform: () -> self
 
-    def type: (*_ToS args) -> T
+    def type: (*_ToS args) -> self
 
-    def unsharp: (*_ToS args) -> T
+    def unsharp: (*_ToS args) -> self
 
-    def watermark: (*_ToS args) -> T
+    def watermark: (*_ToS args) -> self
 
-    def write: (*_ToS args) -> T
+    def write: (*_ToS args) -> self
 
-    def swap: (*_ToS args) -> T
+    def swap: (*_ToS args) -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
 
-    def version: () -> T
+    def version: () -> self
   end
 end
 
 module MiniMagick
-  interface _Conjure[T]
-    def monitor: () -> T
+  interface _Conjure
+    def monitor: () -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
 
-    def version: () -> T
+    def version: () -> self
   end
 end
 
 module MiniMagick
-  interface _Convert[T]
-    def adjoin: () -> T
+  interface _Convert
+    def adjoin: () -> self
 
-    def affine: (*_ToS args) -> T
+    def affine: (*_ToS args) -> self
 
-    def alpha: (*_ToS args) -> T
+    def alpha: (*_ToS args) -> self
 
-    def antialias: () -> T
+    def antialias: () -> self
 
-    def authenticate: (*_ToS args) -> T
+    def authenticate: (*_ToS args) -> self
 
-    def attenuate: (*_ToS args) -> T
+    def attenuate: (*_ToS args) -> self
 
-    def background: (*_ToS args) -> T
+    def background: (*_ToS args) -> self
 
-    def bias: (*_ToS args) -> T
+    def bias: (*_ToS args) -> self
 
-    def black_point_compensation: () -> T
+    def black_point_compensation: () -> self
 
-    def blue_primary: (*_ToS args) -> T
+    def blue_primary: (*_ToS args) -> self
 
-    def bordercolor: (*_ToS args) -> T
+    def bordercolor: (*_ToS args) -> self
 
-    def caption: (*_ToS args) -> T
+    def caption: (*_ToS args) -> self
 
-    def clip: () -> T
+    def clip: () -> self
 
-    def clip_mask: (*_ToS args) -> T
+    def clip_mask: (*_ToS args) -> self
 
-    def clip_path: (*_ToS args) -> T
+    def clip_path: (*_ToS args) -> self
 
-    def colorspace: (*_ToS args) -> T
+    def colorspace: (*_ToS args) -> self
 
-    def comment: (*_ToS args) -> T
+    def comment: (*_ToS args) -> self
 
-    def compose: (*_ToS args) -> T
+    def compose: (*_ToS args) -> self
 
-    def compress: (*_ToS args) -> T
+    def compress: (*_ToS args) -> self
 
-    def define: (*_ToS args) -> T
+    def define: (*_ToS args) -> self
 
-    def delay: (*_ToS args) -> T
+    def delay: (*_ToS args) -> self
 
-    def density: (*_ToS args) -> T
+    def density: (*_ToS args) -> self
 
-    def depth: (*_ToS args) -> T
+    def depth: (*_ToS args) -> self
 
-    def direction: (*_ToS args) -> T
+    def direction: (*_ToS args) -> self
 
-    def display: (*_ToS args) -> T
+    def display: (*_ToS args) -> self
 
-    def dispose: (*_ToS args) -> T
+    def dispose: (*_ToS args) -> self
 
-    def dither: (*_ToS args) -> T
+    def dither: (*_ToS args) -> self
 
-    def encoding: (*_ToS args) -> T
+    def encoding: (*_ToS args) -> self
 
-    def endian: (*_ToS args) -> T
+    def endian: (*_ToS args) -> self
 
-    def family: (*_ToS args) -> T
+    def family: (*_ToS args) -> self
 
-    def features: (*_ToS args) -> T
+    def features: (*_ToS args) -> self
 
-    def fill: (*_ToS args) -> T
+    def fill: (*_ToS args) -> self
 
-    def filter: (*_ToS args) -> T
+    def filter: (*_ToS args) -> self
 
-    def font: (*_ToS args) -> T
+    def font: (*_ToS args) -> self
 
-    def format: (*_ToS args) -> T
+    def format: (*_ToS args) -> self
 
-    def fuzz: (*_ToS args) -> T
+    def fuzz: (*_ToS args) -> self
 
-    def gravity: (*_ToS args) -> T
+    def gravity: (*_ToS args) -> self
 
-    def green_primary: (*_ToS args) -> T
+    def green_primary: (*_ToS args) -> self
 
-    def illuminant: (*_ToS args) -> T
+    def illuminant: (*_ToS args) -> self
 
-    def intensity: (*_ToS args) -> T
+    def intensity: (*_ToS args) -> self
 
-    def intent: (*_ToS args) -> T
+    def intent: (*_ToS args) -> self
 
-    def interlace: (*_ToS args) -> T
+    def interlace: (*_ToS args) -> self
 
-    def interline_spacing: (*_ToS args) -> T
+    def interline_spacing: (*_ToS args) -> self
 
-    def interpolate: (*_ToS args) -> T
+    def interpolate: (*_ToS args) -> self
 
-    def interword_spacing: (*_ToS args) -> T
+    def interword_spacing: (*_ToS args) -> self
 
-    def kerning: (*_ToS args) -> T
+    def kerning: (*_ToS args) -> self
 
-    def label: (*_ToS args) -> T
+    def label: (*_ToS args) -> self
 
-    def limit: (*_ToS args) -> T
+    def limit: (*_ToS args) -> self
 
-    def loop: (*_ToS args) -> T
+    def loop: (*_ToS args) -> self
 
-    def matte: () -> T
+    def matte: () -> self
 
-    def mattecolor: (*_ToS args) -> T
+    def mattecolor: (*_ToS args) -> self
 
-    def moments: () -> T
+    def moments: () -> self
 
-    def monitor: () -> T
+    def monitor: () -> self
 
-    def orient: (*_ToS args) -> T
+    def orient: (*_ToS args) -> self
 
-    def page: (*_ToS args) -> T
+    def page: (*_ToS args) -> self
 
-    def ping: () -> T
+    def ping: () -> self
 
-    def pointsize: (*_ToS args) -> T
+    def pointsize: (*_ToS args) -> self
 
-    def precision: (*_ToS args) -> T
+    def precision: (*_ToS args) -> self
 
-    def preview: (*_ToS args) -> T
+    def preview: (*_ToS args) -> self
 
-    def quality: (*_ToS args) -> T
+    def quality: (*_ToS args) -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def read_mask: (*_ToS args) -> T
+    def read_mask: (*_ToS args) -> self
 
-    def red_primary: (*_ToS args) -> T
+    def red_primary: (*_ToS args) -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def remap: (*_ToS args) -> T
+    def remap: (*_ToS args) -> self
 
-    def repage: (*_ToS args) -> T
+    def repage: (*_ToS args) -> self
 
-    def respect_parentheses: (*_ToS args) -> T
+    def respect_parentheses: (*_ToS args) -> self
 
-    def sampling_factor: (*_ToS args) -> T
+    def sampling_factor: (*_ToS args) -> self
 
-    def scene: (*_ToS args) -> T
+    def scene: (*_ToS args) -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def size: (*_ToS args) -> T
+    def size: (*_ToS args) -> self
 
-    def stretch: (*_ToS args) -> T
+    def stretch: (*_ToS args) -> self
 
-    def stroke: (*_ToS args) -> T
+    def stroke: (*_ToS args) -> self
 
-    def strokewidth: (*_ToS args) -> T
+    def strokewidth: (*_ToS args) -> self
 
-    def style: (*_ToS args) -> T
+    def style: (*_ToS args) -> self
 
-    def support: (*_ToS args) -> T
+    def support: (*_ToS args) -> self
 
-    def synchronize: () -> T
+    def synchronize: () -> self
 
-    def taint: () -> T
+    def taint: () -> self
 
-    def texture: (*_ToS args) -> T
+    def texture: (*_ToS args) -> self
 
-    def tile_offset: (*_ToS args) -> T
+    def tile_offset: (*_ToS args) -> self
 
-    def treedepth: (*_ToS args) -> T
+    def treedepth: (*_ToS args) -> self
 
-    def transparent_color: (*_ToS args) -> T
+    def transparent_color: (*_ToS args) -> self
 
-    def undercolor: (*_ToS args) -> T
+    def undercolor: (*_ToS args) -> self
 
-    def units: (*_ToS args) -> T
+    def units: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def view: () -> T
+    def view: () -> self
 
-    def virtual_pixel: (*_ToS args) -> T
+    def virtual_pixel: (*_ToS args) -> self
 
-    def weight: (*_ToS args) -> T
+    def weight: (*_ToS args) -> self
 
-    def white_point: (*_ToS args) -> T
+    def white_point: (*_ToS args) -> self
 
-    def write_mask: (*_ToS args) -> T
+    def write_mask: (*_ToS args) -> self
 
-    def adaptive_blur: (*_ToS args) -> T
+    def adaptive_blur: (*_ToS args) -> self
 
-    def adaptive_resize: (*_ToS args) -> T
+    def adaptive_resize: (*_ToS args) -> self
 
-    def adaptive_sharpen: (*_ToS args) -> T
+    def adaptive_sharpen: (*_ToS args) -> self
 
-    def annotate: (*_ToS args) -> T
+    def annotate: (*_ToS args) -> self
 
-    def auto_gamma: () -> T
+    def auto_gamma: () -> self
 
-    def auto_level: () -> T
+    def auto_level: () -> self
 
-    def auto_orient: () -> T
+    def auto_orient: () -> self
 
-    def auto_threshold: (*_ToS args) -> T
+    def auto_threshold: (*_ToS args) -> self
 
-    def bench: (*_ToS args) -> T
+    def bench: (*_ToS args) -> self
 
-    def bilateral_blur: (*_ToS args) -> T
+    def bilateral_blur: (*_ToS args) -> self
 
-    def black_threshold: (*_ToS args) -> T
+    def black_threshold: (*_ToS args) -> self
 
-    def blue_shift: (*_ToS args) -> T
+    def blue_shift: (*_ToS args) -> self
 
-    def blur: (*_ToS args) -> T
+    def blur: (*_ToS args) -> self
 
-    def border: (*_ToS args) -> T
+    def border: (*_ToS args) -> self
 
-    def brightness_contrast: (*_ToS args) -> T
+    def brightness_contrast: (*_ToS args) -> self
 
-    def canny: (*_ToS args) -> T
+    def canny: (*_ToS args) -> self
 
-    def cdl: (*_ToS args) -> T
+    def cdl: (*_ToS args) -> self
 
-    def channel: (*_ToS args) -> T
+    def channel: (*_ToS args) -> self
 
-    def charcoal: (*_ToS args) -> T
+    def charcoal: (*_ToS args) -> self
 
-    def chop: (*_ToS args) -> T
+    def chop: (*_ToS args) -> self
 
-    def clahe: (*_ToS args) -> T
+    def clahe: (*_ToS args) -> self
 
-    def clamp: () -> T
+    def clamp: () -> self
 
-    def colorize: (*_ToS args) -> T
+    def colorize: (*_ToS args) -> self
 
-    def color_matrix: (*_ToS args) -> T
+    def color_matrix: (*_ToS args) -> self
 
-    def colors: (*_ToS args) -> T
+    def colors: (*_ToS args) -> self
 
-    def connected_components: (*_ToS args) -> T
+    def connected_components: (*_ToS args) -> self
 
-    def contrast: () -> T
+    def contrast: () -> self
 
-    def contrast_stretch: (*_ToS args) -> T
+    def contrast_stretch: (*_ToS args) -> self
 
-    def convolve: (*_ToS args) -> T
+    def convolve: (*_ToS args) -> self
 
-    def cycle: (*_ToS args) -> T
+    def cycle: (*_ToS args) -> self
 
-    def decipher: (*_ToS args) -> T
+    def decipher: (*_ToS args) -> self
 
-    def deskew: (*_ToS args) -> T
+    def deskew: (*_ToS args) -> self
 
-    def despeckle: () -> T
+    def despeckle: () -> self
 
-    def distort: (*_ToS args) -> T
+    def distort: (*_ToS args) -> self
 
-    def draw: (*_ToS args) -> T
+    def draw: (*_ToS args) -> self
 
-    def edge: (*_ToS args) -> T
+    def edge: (*_ToS args) -> self
 
-    def encipher: (*_ToS args) -> T
+    def encipher: (*_ToS args) -> self
 
-    def emboss: (*_ToS args) -> T
+    def emboss: (*_ToS args) -> self
 
-    def enhance: () -> T
+    def enhance: () -> self
 
-    def equalize: () -> T
+    def equalize: () -> self
 
-    def evaluate: (*_ToS args) -> T
+    def evaluate: (*_ToS args) -> self
 
-    def extent: (*_ToS args) -> T
+    def extent: (*_ToS args) -> self
 
-    def extract: (*_ToS args) -> T
+    def extract: (*_ToS args) -> self
 
-    def fft: () -> T
+    def fft: () -> self
 
-    def flip: () -> T
+    def flip: () -> self
 
-    def floodfill: (*_ToS args) -> T
+    def floodfill: (*_ToS args) -> self
 
-    def flop: () -> T
+    def flop: () -> self
 
-    def frame: (*_ToS args) -> T
+    def frame: (*_ToS args) -> self
 
-    def function: (*_ToS args) -> T
+    def function: (*_ToS args) -> self
 
-    def gamma: (*_ToS args) -> T
+    def gamma: (*_ToS args) -> self
 
-    def gaussian_blur: (*_ToS args) -> T
+    def gaussian_blur: (*_ToS args) -> self
 
-    def geometry: (*_ToS args) -> T
+    def geometry: (*_ToS args) -> self
 
-    def grayscale: (*_ToS args) -> T
+    def grayscale: (*_ToS args) -> self
 
-    def hough_lines: (*_ToS args) -> T
+    def hough_lines: (*_ToS args) -> self
 
-    def identify: () -> T
+    def identify: () -> self
 
-    def ift: () -> T
+    def ift: () -> self
 
-    def implode: (*_ToS args) -> T
+    def implode: (*_ToS args) -> self
 
-    def integral: () -> T
+    def integral: () -> self
 
-    def interpolative_resize: (*_ToS args) -> T
+    def interpolative_resize: (*_ToS args) -> self
 
-    def kmeans: (*_ToS args) -> T
+    def kmeans: (*_ToS args) -> self
 
-    def kuwahara: (*_ToS args) -> T
+    def kuwahara: (*_ToS args) -> self
 
-    def lat: (*_ToS args) -> T
+    def lat: (*_ToS args) -> self
 
-    def level: (*_ToS args) -> T
+    def level: (*_ToS args) -> self
 
-    def level_colors: (*_ToS args) -> T
+    def level_colors: (*_ToS args) -> self
 
-    def linear_stretch: (*_ToS args) -> T
+    def linear_stretch: (*_ToS args) -> self
 
-    def liquid_rescale: (*_ToS args) -> T
+    def liquid_rescale: (*_ToS args) -> self
 
-    def local_contrast: (*_ToS args) -> T
+    def local_contrast: (*_ToS args) -> self
 
-    def mean_shift: (*_ToS args) -> T
+    def mean_shift: (*_ToS args) -> self
 
-    def median: (*_ToS args) -> T
+    def median: (*_ToS args) -> self
 
-    def mode: (*_ToS args) -> T
+    def mode: (*_ToS args) -> self
 
-    def modulate: (*_ToS args) -> T
+    def modulate: (*_ToS args) -> self
 
-    def monochrome: () -> T
+    def monochrome: () -> self
 
-    def morphology: (*_ToS args) -> T
+    def morphology: (*_ToS args) -> self
 
-    def motion_blur: (*_ToS args) -> T
+    def motion_blur: (*_ToS args) -> self
 
-    def negate: () -> T
+    def negate: () -> self
 
-    def noise: (*_ToS args) -> T
+    def noise: (*_ToS args) -> self
 
-    def normalize: () -> T
+    def normalize: () -> self
 
-    def opaque: (*_ToS args) -> T
+    def opaque: (*_ToS args) -> self
 
-    def ordered_dither: (*_ToS args) -> T
+    def ordered_dither: (*_ToS args) -> self
 
-    def paint: (*_ToS args) -> T
+    def paint: (*_ToS args) -> self
 
-    def perceptible: (*_ToS args) -> T
+    def perceptible: (*_ToS args) -> self
 
-    def epsilon: () -> T
+    def epsilon: () -> self
 
-    def polaroid: (*_ToS args) -> T
+    def polaroid: (*_ToS args) -> self
 
-    def posterize: (*_ToS args) -> T
+    def posterize: (*_ToS args) -> self
 
-    def profile: (*_ToS args) -> T
+    def profile: (*_ToS args) -> self
 
-    def quantize: (*_ToS args) -> T
+    def quantize: (*_ToS args) -> self
 
-    def raise: (*_ToS args) -> T
+    def raise: (*_ToS args) -> self
 
-    def random_threshold: (*_ToS args) -> T
+    def random_threshold: (*_ToS args) -> self
 
-    def range_threshold: (*_ToS args) -> T
+    def range_threshold: (*_ToS args) -> self
 
-    def region: (*_ToS args) -> T
+    def region: (*_ToS args) -> self
 
-    def render: () -> T
+    def render: () -> self
 
-    def resample: (*_ToS args) -> T
+    def resample: (*_ToS args) -> self
 
-    def reshape: (*_ToS args) -> T
+    def reshape: (*_ToS args) -> self
 
-    def resize: (*_ToS args) -> T
+    def resize: (*_ToS args) -> self
 
-    def roll: (*_ToS args) -> T
+    def roll: (*_ToS args) -> self
 
-    def rotate: (*_ToS args) -> T
+    def rotate: (*_ToS args) -> self
 
-    def rotational_blur: (*_ToS args) -> T
+    def rotational_blur: (*_ToS args) -> self
 
-    def sample: (*_ToS args) -> T
+    def sample: (*_ToS args) -> self
 
-    def scale: (*_ToS args) -> T
+    def scale: (*_ToS args) -> self
 
-    def segment: (*_ToS args) -> T
+    def segment: (*_ToS args) -> self
 
-    def selective_blur: (*_ToS args) -> T
+    def selective_blur: (*_ToS args) -> self
 
-    def sepia_tone: (*_ToS args) -> T
+    def sepia_tone: (*_ToS args) -> self
 
-    def set: (*_ToS args) -> T
+    def set: (*_ToS args) -> self
 
-    def shade: (*_ToS args) -> T
+    def shade: (*_ToS args) -> self
 
-    def shadow: (*_ToS args) -> T
+    def shadow: (*_ToS args) -> self
 
-    def sharpen: (*_ToS args) -> T
+    def sharpen: (*_ToS args) -> self
 
-    def shave: (*_ToS args) -> T
+    def shave: (*_ToS args) -> self
 
-    def shear: (*_ToS args) -> T
+    def shear: (*_ToS args) -> self
 
-    def sigmoidal_contrast: (*_ToS args) -> T
+    def sigmoidal_contrast: (*_ToS args) -> self
 
-    def sketch: (*_ToS args) -> T
+    def sketch: (*_ToS args) -> self
 
-    def solarize: (*_ToS args) -> T
+    def solarize: (*_ToS args) -> self
 
-    def sort_pixels: () -> T
+    def sort_pixels: () -> self
 
-    def sparse_color: (*_ToS args) -> T
+    def sparse_color: (*_ToS args) -> self
 
-    def splice: (*_ToS args) -> T
+    def splice: (*_ToS args) -> self
 
-    def spread: (*_ToS args) -> T
+    def spread: (*_ToS args) -> self
 
-    def statistic: (*_ToS args) -> T
+    def statistic: (*_ToS args) -> self
 
-    def strip: () -> T
+    def strip: () -> self
 
-    def swirl: (*_ToS args) -> T
+    def swirl: (*_ToS args) -> self
 
-    def threshold: (*_ToS args) -> T
+    def threshold: (*_ToS args) -> self
 
-    def thumbnail: (*_ToS args) -> T
+    def thumbnail: (*_ToS args) -> self
 
-    def tile: (*_ToS args) -> T
+    def tile: (*_ToS args) -> self
 
-    def tint: (*_ToS args) -> T
+    def tint: (*_ToS args) -> self
 
-    def transform: () -> T
+    def transform: () -> self
 
-    def transparent: (*_ToS args) -> T
+    def transparent: (*_ToS args) -> self
 
-    def transpose: () -> T
+    def transpose: () -> self
 
-    def transverse: () -> T
+    def transverse: () -> self
 
-    def trim: () -> T
+    def trim: () -> self
 
-    def type: (*_ToS args) -> T
+    def type: (*_ToS args) -> self
 
-    def unique_colors: () -> T
+    def unique_colors: () -> self
 
-    def unsharp: (*_ToS args) -> T
+    def unsharp: (*_ToS args) -> self
 
-    def vignette: (*_ToS args) -> T
+    def vignette: (*_ToS args) -> self
 
-    def wave: (*_ToS args) -> T
+    def wave: (*_ToS args) -> self
 
-    def wavelet_denoise: (*_ToS args) -> T
+    def wavelet_denoise: (*_ToS args) -> self
 
-    def white_balance: () -> T
+    def white_balance: () -> self
 
-    def white_threshold: (*_ToS args) -> T
+    def white_threshold: (*_ToS args) -> self
 
-    def channel_fx: (*_ToS args) -> T
+    def channel_fx: (*_ToS args) -> self
 
-    def separate: () -> T
+    def separate: () -> self
 
-    def append: () -> T
+    def append: () -> self
 
-    def clut: () -> T
+    def clut: () -> self
 
-    def coalesce: () -> T
+    def coalesce: () -> self
 
-    def combine: () -> T
+    def combine: () -> self
 
-    def compare: () -> T
+    def compare: () -> self
 
-    def complex: (*_ToS args) -> T
+    def complex: (*_ToS args) -> self
 
-    def composite: () -> T
+    def composite: () -> self
 
-    def copy: (*_ToS args) -> T
+    def copy: (*_ToS args) -> self
 
-    def crop: (*_ToS args) -> T
+    def crop: (*_ToS args) -> self
 
-    def deconstruct: () -> T
+    def deconstruct: () -> self
 
-    def evaluate_sequence: (*_ToS args) -> T
+    def evaluate_sequence: (*_ToS args) -> self
 
-    def flatten: () -> T
+    def flatten: () -> self
 
-    def fx: (*_ToS args) -> T
+    def fx: (*_ToS args) -> self
 
-    def hald_clut: () -> T
+    def hald_clut: () -> self
 
-    def layers: (*_ToS args) -> T
+    def layers: (*_ToS args) -> self
 
-    def morph: (*_ToS args) -> T
+    def morph: (*_ToS args) -> self
 
-    def mosaic: () -> T
+    def mosaic: () -> self
 
-    def poly: (*_ToS args) -> T
+    def poly: (*_ToS args) -> self
 
-    def print: (*_ToS args) -> T
+    def print: (*_ToS args) -> self
 
-    def process: (*_ToS args) -> T
+    def process: (*_ToS args) -> self
 
-    def smush: (*_ToS args) -> T
+    def smush: (*_ToS args) -> self
 
-    def write: (*_ToS args) -> T
+    def write: (*_ToS args) -> self
 
-    def clone: (*_ToS args) -> T
+    def clone: (*_ToS args) -> self
 
-    def delete: (*_ToS args) -> T
+    def delete: (*_ToS args) -> self
 
-    def duplicate: (*_ToS args) -> T
+    def duplicate: (*_ToS args) -> self
 
-    def insert: (*_ToS args) -> T
+    def insert: (*_ToS args) -> self
 
-    def reverse: () -> T
+    def reverse: () -> self
 
-    def swap: (*_ToS args) -> T
+    def swap: (*_ToS args) -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def distribute_cache: (*_ToS args) -> T
+    def distribute_cache: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
 
-    def version: () -> T
+    def version: () -> self
   end
 end
 
 module MiniMagick
-  interface _Display[T]
-    def alpha: (*_ToS args) -> T
+  interface _Display
+    def alpha: (*_ToS args) -> self
 
-    def antialias: () -> T
+    def antialias: () -> self
 
-    def authenticate: (*_ToS args) -> T
+    def authenticate: (*_ToS args) -> self
 
-    def backdrop: () -> T
+    def backdrop: () -> self
 
-    def channel: (*_ToS args) -> T
+    def channel: (*_ToS args) -> self
 
-    def colormap: (*_ToS args) -> T
+    def colormap: (*_ToS args) -> self
 
-    def colorspace: (*_ToS args) -> T
+    def colorspace: (*_ToS args) -> self
 
-    def comment: (*_ToS args) -> T
+    def comment: (*_ToS args) -> self
 
-    def compress: (*_ToS args) -> T
+    def compress: (*_ToS args) -> self
 
-    def define: (*_ToS args) -> T
+    def define: (*_ToS args) -> self
 
-    def delay: (*_ToS args) -> T
+    def delay: (*_ToS args) -> self
 
-    def density: (*_ToS args) -> T
+    def density: (*_ToS args) -> self
 
-    def depth: (*_ToS args) -> T
+    def depth: (*_ToS args) -> self
 
-    def display: (*_ToS args) -> T
+    def display: (*_ToS args) -> self
 
-    def dispose: (*_ToS args) -> T
+    def dispose: (*_ToS args) -> self
 
-    def dither: (*_ToS args) -> T
+    def dither: (*_ToS args) -> self
 
-    def endian: (*_ToS args) -> T
+    def endian: (*_ToS args) -> self
 
-    def filter: (*_ToS args) -> T
+    def filter: (*_ToS args) -> self
 
-    def format: (*_ToS args) -> T
+    def format: (*_ToS args) -> self
 
-    def geometry: (*_ToS args) -> T
+    def geometry: (*_ToS args) -> self
 
-    def gravity: (*_ToS args) -> T
+    def gravity: (*_ToS args) -> self
 
-    def identify: () -> T
+    def identify: () -> self
 
-    def immutable: () -> T
+    def immutable: () -> self
 
-    def interlace: (*_ToS args) -> T
+    def interlace: (*_ToS args) -> self
 
-    def interpolate: (*_ToS args) -> T
+    def interpolate: (*_ToS args) -> self
 
-    def label: (*_ToS args) -> T
+    def label: (*_ToS args) -> self
 
-    def limit: (*_ToS args) -> T
+    def limit: (*_ToS args) -> self
 
-    def loop: (*_ToS args) -> T
+    def loop: (*_ToS args) -> self
 
-    def map: (*_ToS args) -> T
+    def map: (*_ToS args) -> self
 
-    def matte: () -> T
+    def matte: () -> self
 
-    def monitor: () -> T
+    def monitor: () -> self
 
-    def nostdin: () -> T
+    def nostdin: () -> self
 
-    def page: (*_ToS args) -> T
+    def page: (*_ToS args) -> self
 
-    def profile: (*_ToS args) -> T
+    def profile: (*_ToS args) -> self
 
-    def quality: (*_ToS args) -> T
+    def quality: (*_ToS args) -> self
 
-    def quantize: (*_ToS args) -> T
+    def quantize: (*_ToS args) -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def remote: (*_ToS args) -> T
+    def remote: (*_ToS args) -> self
 
-    def repage: (*_ToS args) -> T
+    def repage: (*_ToS args) -> self
 
-    def respect_parentheses: (*_ToS args) -> T
+    def respect_parentheses: (*_ToS args) -> self
 
-    def sampling_factor: (*_ToS args) -> T
+    def sampling_factor: (*_ToS args) -> self
 
-    def scenes: (*_ToS args) -> T
+    def scenes: (*_ToS args) -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def set: (*_ToS args) -> T
+    def set: (*_ToS args) -> self
 
-    def size: (*_ToS args) -> T
+    def size: (*_ToS args) -> self
 
-    def support: (*_ToS args) -> T
+    def support: (*_ToS args) -> self
 
-    def texture: (*_ToS args) -> T
+    def texture: (*_ToS args) -> self
 
-    def transparent_color: (*_ToS args) -> T
+    def transparent_color: (*_ToS args) -> self
 
-    def treedepth: (*_ToS args) -> T
+    def treedepth: (*_ToS args) -> self
 
-    def update: (*_ToS args) -> T
+    def update: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def visual: (*_ToS args) -> T
+    def visual: (*_ToS args) -> self
 
-    def virtual_pixel: (*_ToS args) -> T
+    def virtual_pixel: (*_ToS args) -> self
 
-    def window: (*_ToS args) -> T
+    def window: (*_ToS args) -> self
 
-    def window_group: (*_ToS args) -> T
+    def window_group: (*_ToS args) -> self
 
-    def write: (*_ToS args) -> T
+    def write: (*_ToS args) -> self
 
-    def auto_level: () -> T
+    def auto_level: () -> self
 
-    def auto_orient: () -> T
+    def auto_orient: () -> self
 
-    def border: (*_ToS args) -> T
+    def border: (*_ToS args) -> self
 
-    def clip: () -> T
+    def clip: () -> self
 
-    def clip_path: (*_ToS args) -> T
+    def clip_path: (*_ToS args) -> self
 
-    def colors: (*_ToS args) -> T
+    def colors: (*_ToS args) -> self
 
-    def contrast: () -> T
+    def contrast: () -> self
 
-    def crop: (*_ToS args) -> T
+    def crop: (*_ToS args) -> self
 
-    def decipher: (*_ToS args) -> T
+    def decipher: (*_ToS args) -> self
 
-    def deskew: (*_ToS args) -> T
+    def deskew: (*_ToS args) -> self
 
-    def despeckle: () -> T
+    def despeckle: () -> self
 
-    def edge: (*_ToS args) -> T
+    def edge: (*_ToS args) -> self
 
-    def enhance: () -> T
+    def enhance: () -> self
 
-    def equalize: () -> T
+    def equalize: () -> self
 
-    def extent: (*_ToS args) -> T
+    def extent: (*_ToS args) -> self
 
-    def extract: (*_ToS args) -> T
+    def extract: (*_ToS args) -> self
 
-    def flip: () -> T
+    def flip: () -> self
 
-    def flop: () -> T
+    def flop: () -> self
 
-    def frame: (*_ToS args) -> T
+    def frame: (*_ToS args) -> self
 
-    def fuzz: (*_ToS args) -> T
+    def fuzz: (*_ToS args) -> self
 
-    def gamma: (*_ToS args) -> T
+    def gamma: (*_ToS args) -> self
 
-    def monochrome: () -> T
+    def monochrome: () -> self
 
-    def negate: () -> T
+    def negate: () -> self
 
-    def normalize: () -> T
+    def normalize: () -> self
 
-    def raise: (*_ToS args) -> T
+    def raise: (*_ToS args) -> self
 
-    def resample: (*_ToS args) -> T
+    def resample: (*_ToS args) -> self
 
-    def resize: (*_ToS args) -> T
+    def resize: (*_ToS args) -> self
 
-    def roll: (*_ToS args) -> T
+    def roll: (*_ToS args) -> self
 
-    def rotate: (*_ToS args) -> T
+    def rotate: (*_ToS args) -> self
 
-    def sample: (*_ToS args) -> T
+    def sample: (*_ToS args) -> self
 
-    def segment: (*_ToS args) -> T
+    def segment: (*_ToS args) -> self
 
-    def sharpen: (*_ToS args) -> T
+    def sharpen: (*_ToS args) -> self
 
-    def strip: () -> T
+    def strip: () -> self
 
-    def threshold: (*_ToS args) -> T
+    def threshold: (*_ToS args) -> self
 
-    def thumbnail: (*_ToS args) -> T
+    def thumbnail: (*_ToS args) -> self
 
-    def trim: () -> T
+    def trim: () -> self
 
-    def coalesce: () -> T
+    def coalesce: () -> self
 
-    def flatten: () -> T
+    def flatten: () -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
 
-    def version: () -> T
+    def version: () -> self
 
-    def mattecolor_: (*_ToS args) -> T
+    def mattecolor_: (*_ToS args) -> self
 
-    def iconic_: (*_ToS args) -> T
+    def iconic_: (*_ToS args) -> self
   end
 end
 
 module MiniMagick
-  interface _Identify[T]
-    def alpha: (*_ToS args) -> T
+  interface _Identify
+    def alpha: (*_ToS args) -> self
 
-    def antialias: () -> T
+    def antialias: () -> self
 
-    def authenticate: (*_ToS args) -> T
+    def authenticate: (*_ToS args) -> self
 
-    def clip: () -> T
+    def clip: () -> self
 
-    def clip_mask: (*_ToS args) -> T
+    def clip_mask: (*_ToS args) -> self
 
-    def clip_path: (*_ToS args) -> T
+    def clip_path: (*_ToS args) -> self
 
-    def colorspace: (*_ToS args) -> T
+    def colorspace: (*_ToS args) -> self
 
-    def crop: (*_ToS args) -> T
+    def crop: (*_ToS args) -> self
 
-    def define: (*_ToS args) -> T
+    def define: (*_ToS args) -> self
 
-    def density: (*_ToS args) -> T
+    def density: (*_ToS args) -> self
 
-    def depth: (*_ToS args) -> T
+    def depth: (*_ToS args) -> self
 
-    def endian: (*_ToS args) -> T
+    def endian: (*_ToS args) -> self
 
-    def extract: (*_ToS args) -> T
+    def extract: (*_ToS args) -> self
 
-    def features: (*_ToS args) -> T
+    def features: (*_ToS args) -> self
 
-    def format: (*_ToS args) -> T
+    def format: (*_ToS args) -> self
 
-    def fuzz: (*_ToS args) -> T
+    def fuzz: (*_ToS args) -> self
 
-    def gamma: (*_ToS args) -> T
+    def gamma: (*_ToS args) -> self
 
-    def interlace: (*_ToS args) -> T
+    def interlace: (*_ToS args) -> self
 
-    def interpolate: (*_ToS args) -> T
+    def interpolate: (*_ToS args) -> self
 
-    def limit: (*_ToS args) -> T
+    def limit: (*_ToS args) -> self
 
-    def matte: () -> T
+    def matte: () -> self
 
-    def moments: () -> T
+    def moments: () -> self
 
-    def monitor: () -> T
+    def monitor: () -> self
 
-    def ping: () -> T
+    def ping: () -> self
 
-    def precision: (*_ToS args) -> T
+    def precision: (*_ToS args) -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def respect_parentheses: (*_ToS args) -> T
+    def respect_parentheses: (*_ToS args) -> self
 
-    def sampling_factor: (*_ToS args) -> T
+    def sampling_factor: (*_ToS args) -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def set: (*_ToS args) -> T
+    def set: (*_ToS args) -> self
 
-    def size: (*_ToS args) -> T
+    def size: (*_ToS args) -> self
 
-    def strip: () -> T
+    def strip: () -> self
 
-    def unique: () -> T
+    def unique: () -> self
 
-    def units: (*_ToS args) -> T
+    def units: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def virtual_pixel: (*_ToS args) -> T
+    def virtual_pixel: (*_ToS args) -> self
 
-    def auto_orient: () -> T
+    def auto_orient: () -> self
 
-    def channel: (*_ToS args) -> T
+    def channel: (*_ToS args) -> self
 
-    def grayscale: (*_ToS args) -> T
+    def grayscale: (*_ToS args) -> self
 
-    def negate: () -> T
+    def negate: () -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
 
-    def version: () -> T
+    def version: () -> self
   end
 end
 
 module MiniMagick
-  interface _Import[T]
-    def adjoin: () -> T
+  interface _Import
+    def adjoin: () -> self
 
-    def border: () -> T
+    def border: () -> self
 
-    def channel: (*_ToS args) -> T
+    def channel: (*_ToS args) -> self
 
-    def colorspace: (*_ToS args) -> T
+    def colorspace: (*_ToS args) -> self
 
-    def comment: (*_ToS args) -> T
+    def comment: (*_ToS args) -> self
 
-    def compress: (*_ToS args) -> T
+    def compress: (*_ToS args) -> self
 
-    def define: (*_ToS args) -> T
+    def define: (*_ToS args) -> self
 
-    def density: (*_ToS args) -> T
+    def density: (*_ToS args) -> self
 
-    def depth: (*_ToS args) -> T
+    def depth: (*_ToS args) -> self
 
-    def descend: () -> T
+    def descend: () -> self
 
-    def display: (*_ToS args) -> T
+    def display: (*_ToS args) -> self
 
-    def dispose: (*_ToS args) -> T
+    def dispose: (*_ToS args) -> self
 
-    def dither: (*_ToS args) -> T
+    def dither: (*_ToS args) -> self
 
-    def delay: (*_ToS args) -> T
+    def delay: (*_ToS args) -> self
 
-    def encipher: (*_ToS args) -> T
+    def encipher: (*_ToS args) -> self
 
-    def endian: (*_ToS args) -> T
+    def endian: (*_ToS args) -> self
 
-    def encoding: (*_ToS args) -> T
+    def encoding: (*_ToS args) -> self
 
-    def filter: (*_ToS args) -> T
+    def filter: (*_ToS args) -> self
 
-    def format: (*_ToS args) -> T
+    def format: (*_ToS args) -> self
 
-    def frame: () -> T
+    def frame: () -> self
 
-    def gravity: (*_ToS args) -> T
+    def gravity: (*_ToS args) -> self
 
-    def identify: () -> T
+    def identify: () -> self
 
-    def interlace: (*_ToS args) -> T
+    def interlace: (*_ToS args) -> self
 
-    def interpolate: (*_ToS args) -> T
+    def interpolate: (*_ToS args) -> self
 
-    def label: (*_ToS args) -> T
+    def label: (*_ToS args) -> self
 
-    def limit: (*_ToS args) -> T
+    def limit: (*_ToS args) -> self
 
-    def monitor: () -> T
+    def monitor: () -> self
 
-    def page: (*_ToS args) -> T
+    def page: (*_ToS args) -> self
 
-    def pause: (*_ToS args) -> T
+    def pause: (*_ToS args) -> self
 
-    def pointsize: (*_ToS args) -> T
+    def pointsize: (*_ToS args) -> self
 
-    def quality: (*_ToS args) -> T
+    def quality: (*_ToS args) -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def repage: (*_ToS args) -> T
+    def repage: (*_ToS args) -> self
 
-    def respect_parentheses: (*_ToS args) -> T
+    def respect_parentheses: (*_ToS args) -> self
 
-    def sampling_factor: (*_ToS args) -> T
+    def sampling_factor: (*_ToS args) -> self
 
-    def scene: (*_ToS args) -> T
+    def scene: (*_ToS args) -> self
 
-    def screen: () -> T
+    def screen: () -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def set: (*_ToS args) -> T
+    def set: (*_ToS args) -> self
 
-    def silent: () -> T
+    def silent: () -> self
 
-    def snaps: (*_ToS args) -> T
+    def snaps: (*_ToS args) -> self
 
-    def support: (*_ToS args) -> T
+    def support: (*_ToS args) -> self
 
-    def synchronize: () -> T
+    def synchronize: () -> self
 
-    def taint: () -> T
+    def taint: () -> self
 
-    def transparent_color: (*_ToS args) -> T
+    def transparent_color: (*_ToS args) -> self
 
-    def treedepth: (*_ToS args) -> T
+    def treedepth: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def virtual_pixel: (*_ToS args) -> T
+    def virtual_pixel: (*_ToS args) -> self
 
-    def window: (*_ToS args) -> T
+    def window: (*_ToS args) -> self
 
-    def annotate: (*_ToS args) -> T
+    def annotate: (*_ToS args) -> self
 
-    def colors: (*_ToS args) -> T
+    def colors: (*_ToS args) -> self
 
-    def crop: (*_ToS args) -> T
+    def crop: (*_ToS args) -> self
 
-    def extent: (*_ToS args) -> T
+    def extent: (*_ToS args) -> self
 
-    def geometry: (*_ToS args) -> T
+    def geometry: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def monochrome: () -> T
+    def monochrome: () -> self
 
-    def negate: () -> T
+    def negate: () -> self
 
-    def quantize: (*_ToS args) -> T
+    def quantize: (*_ToS args) -> self
 
-    def resize: (*_ToS args) -> T
+    def resize: (*_ToS args) -> self
 
-    def rotate: (*_ToS args) -> T
+    def rotate: (*_ToS args) -> self
 
-    def strip: () -> T
+    def strip: () -> self
 
-    def thumbnail: (*_ToS args) -> T
+    def thumbnail: (*_ToS args) -> self
 
-    def transparent: (*_ToS args) -> T
+    def transparent: (*_ToS args) -> self
 
-    def trim: () -> T
+    def trim: () -> self
 
-    def type: (*_ToS args) -> T
+    def type: (*_ToS args) -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
 
-    def version: () -> T
+    def version: () -> self
   end
 end
 
 module MiniMagick
-  interface _Mogrify[T]
-    def adjoin: () -> T
+  interface _Mogrify
+    def adjoin: () -> self
 
-    def affine: (*_ToS args) -> T
+    def affine: (*_ToS args) -> self
 
-    def alpha: (*_ToS args) -> T
+    def alpha: (*_ToS args) -> self
 
-    def antialias: () -> T
+    def antialias: () -> self
 
-    def authenticate: (*_ToS args) -> T
+    def authenticate: (*_ToS args) -> self
 
-    def attenuate: (*_ToS args) -> T
+    def attenuate: (*_ToS args) -> self
 
-    def background: (*_ToS args) -> T
+    def background: (*_ToS args) -> self
 
-    def bias: (*_ToS args) -> T
+    def bias: (*_ToS args) -> self
 
-    def black_point_compensation: () -> T
+    def black_point_compensation: () -> self
 
-    def blue_primary: (*_ToS args) -> T
+    def blue_primary: (*_ToS args) -> self
 
-    def bordercolor: (*_ToS args) -> T
+    def bordercolor: (*_ToS args) -> self
 
-    def caption: (*_ToS args) -> T
+    def caption: (*_ToS args) -> self
 
-    def colorspace: (*_ToS args) -> T
+    def colorspace: (*_ToS args) -> self
 
-    def comment: (*_ToS args) -> T
+    def comment: (*_ToS args) -> self
 
-    def compose: (*_ToS args) -> T
+    def compose: (*_ToS args) -> self
 
-    def compress: (*_ToS args) -> T
+    def compress: (*_ToS args) -> self
 
-    def define: (*_ToS args) -> T
+    def define: (*_ToS args) -> self
 
-    def delay: (*_ToS args) -> T
+    def delay: (*_ToS args) -> self
 
-    def density: (*_ToS args) -> T
+    def density: (*_ToS args) -> self
 
-    def depth: (*_ToS args) -> T
+    def depth: (*_ToS args) -> self
 
-    def direction: (*_ToS args) -> T
+    def direction: (*_ToS args) -> self
 
-    def display: (*_ToS args) -> T
+    def display: (*_ToS args) -> self
 
-    def dispose: (*_ToS args) -> T
+    def dispose: (*_ToS args) -> self
 
-    def dither: (*_ToS args) -> T
+    def dither: (*_ToS args) -> self
 
-    def encoding: (*_ToS args) -> T
+    def encoding: (*_ToS args) -> self
 
-    def endian: (*_ToS args) -> T
+    def endian: (*_ToS args) -> self
 
-    def family: (*_ToS args) -> T
+    def family: (*_ToS args) -> self
 
-    def features: (*_ToS args) -> T
+    def features: (*_ToS args) -> self
 
-    def fill: (*_ToS args) -> T
+    def fill: (*_ToS args) -> self
 
-    def filter: (*_ToS args) -> T
+    def filter: (*_ToS args) -> self
 
-    def font: (*_ToS args) -> T
+    def font: (*_ToS args) -> self
 
-    def format: (*_ToS args) -> T
+    def format: (*_ToS args) -> self
 
-    def fuzz: (*_ToS args) -> T
+    def fuzz: (*_ToS args) -> self
 
-    def gravity: (*_ToS args) -> T
+    def gravity: (*_ToS args) -> self
 
-    def green_primary: (*_ToS args) -> T
+    def green_primary: (*_ToS args) -> self
 
-    def illuminant: (*_ToS args) -> T
+    def illuminant: (*_ToS args) -> self
 
-    def intensity: (*_ToS args) -> T
+    def intensity: (*_ToS args) -> self
 
-    def intent: (*_ToS args) -> T
+    def intent: (*_ToS args) -> self
 
-    def interlace: (*_ToS args) -> T
+    def interlace: (*_ToS args) -> self
 
-    def interline_spacing: (*_ToS args) -> T
+    def interline_spacing: (*_ToS args) -> self
 
-    def interpolate: (*_ToS args) -> T
+    def interpolate: (*_ToS args) -> self
 
-    def interword_spacing: (*_ToS args) -> T
+    def interword_spacing: (*_ToS args) -> self
 
-    def kerning: (*_ToS args) -> T
+    def kerning: (*_ToS args) -> self
 
-    def label: (*_ToS args) -> T
+    def label: (*_ToS args) -> self
 
-    def limit: (*_ToS args) -> T
+    def limit: (*_ToS args) -> self
 
-    def loop: (*_ToS args) -> T
+    def loop: (*_ToS args) -> self
 
-    def matte: () -> T
+    def matte: () -> self
 
-    def mattecolor: (*_ToS args) -> T
+    def mattecolor: (*_ToS args) -> self
 
-    def monitor: () -> T
+    def monitor: () -> self
 
-    def orient: (*_ToS args) -> T
+    def orient: (*_ToS args) -> self
 
-    def page: (*_ToS args) -> T
+    def page: (*_ToS args) -> self
 
-    def path: (*_ToS args) -> T
+    def path: (*_ToS args) -> self
 
-    def ping: () -> T
+    def ping: () -> self
 
-    def pointsize: (*_ToS args) -> T
+    def pointsize: (*_ToS args) -> self
 
-    def precision: (*_ToS args) -> T
+    def precision: (*_ToS args) -> self
 
-    def preview: (*_ToS args) -> T
+    def preview: (*_ToS args) -> self
 
-    def quality: (*_ToS args) -> T
+    def quality: (*_ToS args) -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def read_mask: (*_ToS args) -> T
+    def read_mask: (*_ToS args) -> self
 
-    def red_primary: (*_ToS args) -> T
+    def red_primary: (*_ToS args) -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def remap: (*_ToS args) -> T
+    def remap: (*_ToS args) -> self
 
-    def respect_parentheses: (*_ToS args) -> T
+    def respect_parentheses: (*_ToS args) -> self
 
-    def sampling_factor: (*_ToS args) -> T
+    def sampling_factor: (*_ToS args) -> self
 
-    def scene: (*_ToS args) -> T
+    def scene: (*_ToS args) -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def size: (*_ToS args) -> T
+    def size: (*_ToS args) -> self
 
-    def stretch: (*_ToS args) -> T
+    def stretch: (*_ToS args) -> self
 
-    def stroke: (*_ToS args) -> T
+    def stroke: (*_ToS args) -> self
 
-    def strokewidth: (*_ToS args) -> T
+    def strokewidth: (*_ToS args) -> self
 
-    def style: (*_ToS args) -> T
+    def style: (*_ToS args) -> self
 
-    def synchronize: () -> T
+    def synchronize: () -> self
 
-    def taint: () -> T
+    def taint: () -> self
 
-    def texture: (*_ToS args) -> T
+    def texture: (*_ToS args) -> self
 
-    def tile_offset: (*_ToS args) -> T
+    def tile_offset: (*_ToS args) -> self
 
-    def treedepth: (*_ToS args) -> T
+    def treedepth: (*_ToS args) -> self
 
-    def transparent_color: (*_ToS args) -> T
+    def transparent_color: (*_ToS args) -> self
 
-    def undercolor: (*_ToS args) -> T
+    def undercolor: (*_ToS args) -> self
 
-    def units: (*_ToS args) -> T
+    def units: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def view: () -> T
+    def view: () -> self
 
-    def virtual_pixel: (*_ToS args) -> T
+    def virtual_pixel: (*_ToS args) -> self
 
-    def weight: (*_ToS args) -> T
+    def weight: (*_ToS args) -> self
 
-    def white_point: (*_ToS args) -> T
+    def white_point: (*_ToS args) -> self
 
-    def word_break: (*_ToS args) -> T
+    def word_break: (*_ToS args) -> self
 
-    def adaptive_blur: (*_ToS args) -> T
+    def adaptive_blur: (*_ToS args) -> self
 
-    def adaptive_resize: (*_ToS args) -> T
+    def adaptive_resize: (*_ToS args) -> self
 
-    def adaptive_sharpen: (*_ToS args) -> T
+    def adaptive_sharpen: (*_ToS args) -> self
 
-    def annotate: (*_ToS args) -> T
+    def annotate: (*_ToS args) -> self
 
-    def auto_gamma: () -> T
+    def auto_gamma: () -> self
 
-    def auto_level: () -> T
+    def auto_level: () -> self
 
-    def auto_orient: () -> T
+    def auto_orient: () -> self
 
-    def auto_threshold: (*_ToS args) -> T
+    def auto_threshold: (*_ToS args) -> self
 
-    def bench: (*_ToS args) -> T
+    def bench: (*_ToS args) -> self
 
-    def bilateral_blur: (*_ToS args) -> T
+    def bilateral_blur: (*_ToS args) -> self
 
-    def black_threshold: (*_ToS args) -> T
+    def black_threshold: (*_ToS args) -> self
 
-    def blue_shift: () -> T
+    def blue_shift: () -> self
 
-    def blur: (*_ToS args) -> T
+    def blur: (*_ToS args) -> self
 
-    def border: (*_ToS args) -> T
+    def border: (*_ToS args) -> self
 
-    def brightness_contrast: (*_ToS args) -> T
+    def brightness_contrast: (*_ToS args) -> self
 
-    def canny: (*_ToS args) -> T
+    def canny: (*_ToS args) -> self
 
-    def cdl: (*_ToS args) -> T
+    def cdl: (*_ToS args) -> self
 
-    def channel: (*_ToS args) -> T
+    def channel: (*_ToS args) -> self
 
-    def charcoal: (*_ToS args) -> T
+    def charcoal: (*_ToS args) -> self
 
-    def chop: (*_ToS args) -> T
+    def chop: (*_ToS args) -> self
 
-    def clahe: (*_ToS args) -> T
+    def clahe: (*_ToS args) -> self
 
-    def clamp: () -> T
+    def clamp: () -> self
 
-    def clip: () -> T
+    def clip: () -> self
 
-    def clip_mask: (*_ToS args) -> T
+    def clip_mask: (*_ToS args) -> self
 
-    def clip_path: (*_ToS args) -> T
+    def clip_path: (*_ToS args) -> self
 
-    def colorize: (*_ToS args) -> T
+    def colorize: (*_ToS args) -> self
 
-    def color_matrix: (*_ToS args) -> T
+    def color_matrix: (*_ToS args) -> self
 
-    def colors: (*_ToS args) -> T
+    def colors: (*_ToS args) -> self
 
-    def color_threshold: (*_ToS args) -> T
+    def color_threshold: (*_ToS args) -> self
 
-    def connected_components: (*_ToS args) -> T
+    def connected_components: (*_ToS args) -> self
 
-    def contrast: () -> T
+    def contrast: () -> self
 
-    def contrast_stretch: (*_ToS args) -> T
+    def contrast_stretch: (*_ToS args) -> self
 
-    def convolve: (*_ToS args) -> T
+    def convolve: (*_ToS args) -> self
 
-    def cycle: (*_ToS args) -> T
+    def cycle: (*_ToS args) -> self
 
-    def decipher: (*_ToS args) -> T
+    def decipher: (*_ToS args) -> self
 
-    def deskew: (*_ToS args) -> T
+    def deskew: (*_ToS args) -> self
 
-    def despeckle: () -> T
+    def despeckle: () -> self
 
-    def distort: (*_ToS args) -> T
+    def distort: (*_ToS args) -> self
 
-    def draw: (*_ToS args) -> T
+    def draw: (*_ToS args) -> self
 
-    def edge: (*_ToS args) -> T
+    def edge: (*_ToS args) -> self
 
-    def encipher: (*_ToS args) -> T
+    def encipher: (*_ToS args) -> self
 
-    def emboss: (*_ToS args) -> T
+    def emboss: (*_ToS args) -> self
 
-    def enhance: () -> T
+    def enhance: () -> self
 
-    def equalize: () -> T
+    def equalize: () -> self
 
-    def evaluate: (*_ToS args) -> T
+    def evaluate: (*_ToS args) -> self
 
-    def extent: (*_ToS args) -> T
+    def extent: (*_ToS args) -> self
 
-    def extract: (*_ToS args) -> T
+    def extract: (*_ToS args) -> self
 
-    def fft: () -> T
+    def fft: () -> self
 
-    def flip: () -> T
+    def flip: () -> self
 
-    def floodfill: (*_ToS args) -> T
+    def floodfill: (*_ToS args) -> self
 
-    def flop: () -> T
+    def flop: () -> self
 
-    def frame: (*_ToS args) -> T
+    def frame: (*_ToS args) -> self
 
-    def function: (*_ToS args) -> T
+    def function: (*_ToS args) -> self
 
-    def gamma: (*_ToS args) -> T
+    def gamma: (*_ToS args) -> self
 
-    def gaussian_blur: (*_ToS args) -> T
+    def gaussian_blur: (*_ToS args) -> self
 
-    def geometry: (*_ToS args) -> T
+    def geometry: (*_ToS args) -> self
 
-    def grayscale: (*_ToS args) -> T
+    def grayscale: (*_ToS args) -> self
 
-    def hough_lines: (*_ToS args) -> T
+    def hough_lines: (*_ToS args) -> self
 
-    def identify: () -> T
+    def identify: () -> self
 
-    def ift: () -> T
+    def ift: () -> self
 
-    def implode: (*_ToS args) -> T
+    def implode: (*_ToS args) -> self
 
-    def integral: () -> T
+    def integral: () -> self
 
-    def interpolative_resize: (*_ToS args) -> T
+    def interpolative_resize: (*_ToS args) -> self
 
-    def kmeans: (*_ToS args) -> T
+    def kmeans: (*_ToS args) -> self
 
-    def kuwahara: (*_ToS args) -> T
+    def kuwahara: (*_ToS args) -> self
 
-    def lat: (*_ToS args) -> T
+    def lat: (*_ToS args) -> self
 
-    def level: (*_ToS args) -> T
+    def level: (*_ToS args) -> self
 
-    def level_colors: (*_ToS args) -> T
+    def level_colors: (*_ToS args) -> self
 
-    def linear_stretch: (*_ToS args) -> T
+    def linear_stretch: (*_ToS args) -> self
 
-    def liquid_rescale: (*_ToS args) -> T
+    def liquid_rescale: (*_ToS args) -> self
 
-    def local_contrast: (*_ToS args) -> T
+    def local_contrast: (*_ToS args) -> self
 
-    def magnify: () -> T
+    def magnify: () -> self
 
-    def mean_shift: (*_ToS args) -> T
+    def mean_shift: (*_ToS args) -> self
 
-    def median: (*_ToS args) -> T
+    def median: (*_ToS args) -> self
 
-    def mode: (*_ToS args) -> T
+    def mode: (*_ToS args) -> self
 
-    def modulate: (*_ToS args) -> T
+    def modulate: (*_ToS args) -> self
 
-    def monochrome: () -> T
+    def monochrome: () -> self
 
-    def morphology: (*_ToS args) -> T
+    def morphology: (*_ToS args) -> self
 
-    def motion_blur: (*_ToS args) -> T
+    def motion_blur: (*_ToS args) -> self
 
-    def negate: () -> T
+    def negate: () -> self
 
-    def noise: (*_ToS args) -> T
+    def noise: (*_ToS args) -> self
 
-    def normalize: () -> T
+    def normalize: () -> self
 
-    def opaque: (*_ToS args) -> T
+    def opaque: (*_ToS args) -> self
 
-    def ordered_dither: (*_ToS args) -> T
+    def ordered_dither: (*_ToS args) -> self
 
-    def paint: (*_ToS args) -> T
+    def paint: (*_ToS args) -> self
 
-    def perceptible: (*_ToS args) -> T
+    def perceptible: (*_ToS args) -> self
 
-    def epsilon: () -> T
+    def epsilon: () -> self
 
-    def polaroid: (*_ToS args) -> T
+    def polaroid: (*_ToS args) -> self
 
-    def posterize: (*_ToS args) -> T
+    def posterize: (*_ToS args) -> self
 
-    def profile: (*_ToS args) -> T
+    def profile: (*_ToS args) -> self
 
-    def quantize: (*_ToS args) -> T
+    def quantize: (*_ToS args) -> self
 
-    def raise: (*_ToS args) -> T
+    def raise: (*_ToS args) -> self
 
-    def random_threshold: (*_ToS args) -> T
+    def random_threshold: (*_ToS args) -> self
 
-    def range_threshold: (*_ToS args) -> T
+    def range_threshold: (*_ToS args) -> self
 
-    def region: (*_ToS args) -> T
+    def region: (*_ToS args) -> self
 
-    def render: () -> T
+    def render: () -> self
 
-    def repage: (*_ToS args) -> T
+    def repage: (*_ToS args) -> self
 
-    def resample: (*_ToS args) -> T
+    def resample: (*_ToS args) -> self
 
-    def reshape: (*_ToS args) -> T
+    def reshape: (*_ToS args) -> self
 
-    def resize: (*_ToS args) -> T
+    def resize: (*_ToS args) -> self
 
-    def roll: (*_ToS args) -> T
+    def roll: (*_ToS args) -> self
 
-    def rotate: (*_ToS args) -> T
+    def rotate: (*_ToS args) -> self
 
-    def rotational_blur: (*_ToS args) -> T
+    def rotational_blur: (*_ToS args) -> self
 
-    def sample: (*_ToS args) -> T
+    def sample: (*_ToS args) -> self
 
-    def scale: (*_ToS args) -> T
+    def scale: (*_ToS args) -> self
 
-    def segment: (*_ToS args) -> T
+    def segment: (*_ToS args) -> self
 
-    def selective_blur: (*_ToS args) -> T
+    def selective_blur: (*_ToS args) -> self
 
-    def sepia_tone: (*_ToS args) -> T
+    def sepia_tone: (*_ToS args) -> self
 
-    def set: (*_ToS args) -> T
+    def set: (*_ToS args) -> self
 
-    def shade: (*_ToS args) -> T
+    def shade: (*_ToS args) -> self
 
-    def shadow: (*_ToS args) -> T
+    def shadow: (*_ToS args) -> self
 
-    def sharpen: (*_ToS args) -> T
+    def sharpen: (*_ToS args) -> self
 
-    def shave: (*_ToS args) -> T
+    def shave: (*_ToS args) -> self
 
-    def shear: (*_ToS args) -> T
+    def shear: (*_ToS args) -> self
 
-    def sigmoidal_contrast: (*_ToS args) -> T
+    def sigmoidal_contrast: (*_ToS args) -> self
 
-    def sketch: (*_ToS args) -> T
+    def sketch: (*_ToS args) -> self
 
-    def solarize: (*_ToS args) -> T
+    def solarize: (*_ToS args) -> self
 
-    def sort_pixels: () -> T
+    def sort_pixels: () -> self
 
-    def sparse_color: (*_ToS args) -> T
+    def sparse_color: (*_ToS args) -> self
 
-    def splice: (*_ToS args) -> T
+    def splice: (*_ToS args) -> self
 
-    def spread: (*_ToS args) -> T
+    def spread: (*_ToS args) -> self
 
-    def statistic: (*_ToS args) -> T
+    def statistic: (*_ToS args) -> self
 
-    def strip: () -> T
+    def strip: () -> self
 
-    def swirl: (*_ToS args) -> T
+    def swirl: (*_ToS args) -> self
 
-    def threshold: (*_ToS args) -> T
+    def threshold: (*_ToS args) -> self
 
-    def thumbnail: (*_ToS args) -> T
+    def thumbnail: (*_ToS args) -> self
 
-    def tile: (*_ToS args) -> T
+    def tile: (*_ToS args) -> self
 
-    def tint: (*_ToS args) -> T
+    def tint: (*_ToS args) -> self
 
-    def transform: () -> T
+    def transform: () -> self
 
-    def transparent: (*_ToS args) -> T
+    def transparent: (*_ToS args) -> self
 
-    def transpose: () -> T
+    def transpose: () -> self
 
-    def transverse: () -> T
+    def transverse: () -> self
 
-    def trim: () -> T
+    def trim: () -> self
 
-    def type: (*_ToS args) -> T
+    def type: (*_ToS args) -> self
 
-    def unique_colors: () -> T
+    def unique_colors: () -> self
 
-    def unsharp: (*_ToS args) -> T
+    def unsharp: (*_ToS args) -> self
 
-    def vignette: (*_ToS args) -> T
+    def vignette: (*_ToS args) -> self
 
-    def wave: (*_ToS args) -> T
+    def wave: (*_ToS args) -> self
 
-    def wavelet_denoise: (*_ToS args) -> T
+    def wavelet_denoise: (*_ToS args) -> self
 
-    def white_balance: () -> T
+    def white_balance: () -> self
 
-    def white_threshold: (*_ToS args) -> T
+    def white_threshold: (*_ToS args) -> self
 
-    def channel_fx: (*_ToS args) -> T
+    def channel_fx: (*_ToS args) -> self
 
-    def separate: () -> T
+    def separate: () -> self
 
-    def affinity: (*_ToS args) -> T
+    def affinity: (*_ToS args) -> self
 
-    def append: () -> T
+    def append: () -> self
 
-    def clut: () -> T
+    def clut: () -> self
 
-    def coalesce: () -> T
+    def coalesce: () -> self
 
-    def combine: () -> T
+    def combine: () -> self
 
-    def compare: () -> T
+    def compare: () -> self
 
-    def complex: (*_ToS args) -> T
+    def complex: (*_ToS args) -> self
 
-    def composite: () -> T
+    def composite: () -> self
 
-    def copy: (*_ToS args) -> T
+    def copy: (*_ToS args) -> self
 
-    def crop: (*_ToS args) -> T
+    def crop: (*_ToS args) -> self
 
-    def deconstruct: () -> T
+    def deconstruct: () -> self
 
-    def evaluate_sequence: (*_ToS args) -> T
+    def evaluate_sequence: (*_ToS args) -> self
 
-    def flatten: () -> T
+    def flatten: () -> self
 
-    def fx: (*_ToS args) -> T
+    def fx: (*_ToS args) -> self
 
-    def hald_clut: () -> T
+    def hald_clut: () -> self
 
-    def layers: (*_ToS args) -> T
+    def layers: (*_ToS args) -> self
 
-    def morph: (*_ToS args) -> T
+    def morph: (*_ToS args) -> self
 
-    def mosaic: () -> T
+    def mosaic: () -> self
 
-    def poly: (*_ToS args) -> T
+    def poly: (*_ToS args) -> self
 
-    def print: (*_ToS args) -> T
+    def print: (*_ToS args) -> self
 
-    def process: (*_ToS args) -> T
+    def process: (*_ToS args) -> self
 
-    def smush: (*_ToS args) -> T
+    def smush: (*_ToS args) -> self
 
-    def write: (*_ToS args) -> T
+    def write: (*_ToS args) -> self
 
-    def delete: (*_ToS args) -> T
+    def delete: (*_ToS args) -> self
 
-    def duplicate: (*_ToS args) -> T
+    def duplicate: (*_ToS args) -> self
 
-    def insert: (*_ToS args) -> T
+    def insert: (*_ToS args) -> self
 
-    def reverse: () -> T
+    def reverse: () -> self
 
-    def swap: (*_ToS args) -> T
+    def swap: (*_ToS args) -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def distribute_cache: (*_ToS args) -> T
+    def distribute_cache: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
 
-    def version: () -> T
+    def version: () -> self
   end
 end
 
 module MiniMagick
-  interface _Montage[T]
-    def adjoin: () -> T
+  interface _Montage
+    def adjoin: () -> self
 
-    def affine: (*_ToS args) -> T
+    def affine: (*_ToS args) -> self
 
-    def alpha: (*_ToS args) -> T
+    def alpha: (*_ToS args) -> self
 
-    def authenticate: (*_ToS args) -> T
+    def authenticate: (*_ToS args) -> self
 
-    def blue_primary: (*_ToS args) -> T
+    def blue_primary: (*_ToS args) -> self
 
-    def bordercolor: (*_ToS args) -> T
+    def bordercolor: (*_ToS args) -> self
 
-    def caption: (*_ToS args) -> T
+    def caption: (*_ToS args) -> self
 
-    def colors: (*_ToS args) -> T
+    def colors: (*_ToS args) -> self
 
-    def colorspace: (*_ToS args) -> T
+    def colorspace: (*_ToS args) -> self
 
-    def comment: (*_ToS args) -> T
+    def comment: (*_ToS args) -> self
 
-    def compose: (*_ToS args) -> T
+    def compose: (*_ToS args) -> self
 
-    def compress: (*_ToS args) -> T
+    def compress: (*_ToS args) -> self
 
-    def define: (*_ToS args) -> T
+    def define: (*_ToS args) -> self
 
-    def delay: (*_ToS args) -> T
+    def delay: (*_ToS args) -> self
 
-    def density: (*_ToS args) -> T
+    def density: (*_ToS args) -> self
 
-    def depth: (*_ToS args) -> T
+    def depth: (*_ToS args) -> self
 
-    def display: (*_ToS args) -> T
+    def display: (*_ToS args) -> self
 
-    def dispose: (*_ToS args) -> T
+    def dispose: (*_ToS args) -> self
 
-    def dither: (*_ToS args) -> T
+    def dither: (*_ToS args) -> self
 
-    def draw: (*_ToS args) -> T
+    def draw: (*_ToS args) -> self
 
-    def encoding: (*_ToS args) -> T
+    def encoding: (*_ToS args) -> self
 
-    def endian: (*_ToS args) -> T
+    def endian: (*_ToS args) -> self
 
-    def extract: (*_ToS args) -> T
+    def extract: (*_ToS args) -> self
 
-    def family: (*_ToS args) -> T
+    def family: (*_ToS args) -> self
 
-    def fill: (*_ToS args) -> T
+    def fill: (*_ToS args) -> self
 
-    def filter: (*_ToS args) -> T
+    def filter: (*_ToS args) -> self
 
-    def font: (*_ToS args) -> T
+    def font: (*_ToS args) -> self
 
-    def format: (*_ToS args) -> T
+    def format: (*_ToS args) -> self
 
-    def gamma: (*_ToS args) -> T
+    def gamma: (*_ToS args) -> self
 
-    def geometry: (*_ToS args) -> T
+    def geometry: (*_ToS args) -> self
 
-    def gravity: (*_ToS args) -> T
+    def gravity: (*_ToS args) -> self
 
-    def green_primary: (*_ToS args) -> T
+    def green_primary: (*_ToS args) -> self
 
-    def identify: () -> T
+    def identify: () -> self
 
-    def interlace: (*_ToS args) -> T
+    def interlace: (*_ToS args) -> self
 
-    def interpolate: (*_ToS args) -> T
+    def interpolate: (*_ToS args) -> self
 
-    def kerning: (*_ToS args) -> T
+    def kerning: (*_ToS args) -> self
 
-    def label: (*_ToS args) -> T
+    def label: (*_ToS args) -> self
 
-    def limit: (*_ToS args) -> T
+    def limit: (*_ToS args) -> self
 
-    def matte: () -> T
+    def matte: () -> self
 
-    def mattecolor: (*_ToS args) -> T
+    def mattecolor: (*_ToS args) -> self
 
-    def mode: (*_ToS args) -> T
+    def mode: (*_ToS args) -> self
 
-    def monitor: () -> T
+    def monitor: () -> self
 
-    def page: (*_ToS args) -> T
+    def page: (*_ToS args) -> self
 
-    def pointsize: (*_ToS args) -> T
+    def pointsize: (*_ToS args) -> self
 
-    def profile: (*_ToS args) -> T
+    def profile: (*_ToS args) -> self
 
-    def quality: (*_ToS args) -> T
+    def quality: (*_ToS args) -> self
 
-    def quantize: (*_ToS args) -> T
+    def quantize: (*_ToS args) -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def red_primary: (*_ToS args) -> T
+    def red_primary: (*_ToS args) -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def respect_parentheses: (*_ToS args) -> T
+    def respect_parentheses: (*_ToS args) -> self
 
-    def sampling_factor: (*_ToS args) -> T
+    def sampling_factor: (*_ToS args) -> self
 
-    def scenes: (*_ToS args) -> T
+    def scenes: (*_ToS args) -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def set: (*_ToS args) -> T
+    def set: (*_ToS args) -> self
 
-    def shadow: () -> T
+    def shadow: () -> self
 
-    def size: (*_ToS args) -> T
+    def size: (*_ToS args) -> self
 
-    def stroke: (*_ToS args) -> T
+    def stroke: (*_ToS args) -> self
 
-    def support: (*_ToS args) -> T
+    def support: (*_ToS args) -> self
 
-    def synchronize: () -> T
+    def synchronize: () -> self
 
-    def taint: () -> T
+    def taint: () -> self
 
-    def texture: (*_ToS args) -> T
+    def texture: (*_ToS args) -> self
 
-    def thumbnail: (*_ToS args) -> T
+    def thumbnail: (*_ToS args) -> self
 
-    def tile: (*_ToS args) -> T
+    def tile: (*_ToS args) -> self
 
-    def title: (*_ToS args) -> T
+    def title: (*_ToS args) -> self
 
-    def transparent_color: (*_ToS args) -> T
+    def transparent_color: (*_ToS args) -> self
 
-    def treedepth: (*_ToS args) -> T
+    def treedepth: (*_ToS args) -> self
 
-    def trim: () -> T
+    def trim: () -> self
 
-    def units: (*_ToS args) -> T
+    def units: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def virtual_pixel: (*_ToS args) -> T
+    def virtual_pixel: (*_ToS args) -> self
 
-    def white_point: (*_ToS args) -> T
+    def white_point: (*_ToS args) -> self
 
-    def adaptive_sharpen: (*_ToS args) -> T
+    def adaptive_sharpen: (*_ToS args) -> self
 
-    def annotate: (*_ToS args) -> T
+    def annotate: (*_ToS args) -> self
 
-    def auto_orient: () -> T
+    def auto_orient: () -> self
 
-    def blur: (*_ToS args) -> T
+    def blur: (*_ToS args) -> self
 
-    def border: (*_ToS args) -> T
+    def border: (*_ToS args) -> self
 
-    def channel: (*_ToS args) -> T
+    def channel: (*_ToS args) -> self
 
-    def crop: (*_ToS args) -> T
+    def crop: (*_ToS args) -> self
 
-    def distort: (*_ToS args) -> T
+    def distort: (*_ToS args) -> self
 
-    def extent: (*_ToS args) -> T
+    def extent: (*_ToS args) -> self
 
-    def flatten: () -> T
+    def flatten: () -> self
 
-    def flip: () -> T
+    def flip: () -> self
 
-    def flop: () -> T
+    def flop: () -> self
 
-    def frame: (*_ToS args) -> T
+    def frame: (*_ToS args) -> self
 
-    def layers: (*_ToS args) -> T
+    def layers: (*_ToS args) -> self
 
-    def monochrome: () -> T
+    def monochrome: () -> self
 
-    def polaroid: (*_ToS args) -> T
+    def polaroid: (*_ToS args) -> self
 
-    def repage: (*_ToS args) -> T
+    def repage: (*_ToS args) -> self
 
-    def resize: (*_ToS args) -> T
+    def resize: (*_ToS args) -> self
 
-    def rotate: (*_ToS args) -> T
+    def rotate: (*_ToS args) -> self
 
-    def scale: (*_ToS args) -> T
+    def scale: (*_ToS args) -> self
 
-    def strip: () -> T
+    def strip: () -> self
 
-    def transform: () -> T
+    def transform: () -> self
 
-    def transpose: () -> T
+    def transpose: () -> self
 
-    def transparent: (*_ToS args) -> T
+    def transparent: (*_ToS args) -> self
 
-    def type: (*_ToS args) -> T
+    def type: (*_ToS args) -> self
 
-    def unsharp: (*_ToS args) -> T
+    def unsharp: (*_ToS args) -> self
 
-    def coalesce: () -> T
+    def coalesce: () -> self
 
-    def composite: () -> T
+    def composite: () -> self
 
-    def clone: (*_ToS args) -> T
+    def clone: (*_ToS args) -> self
 
-    def delete: (*_ToS args) -> T
+    def delete: (*_ToS args) -> self
 
-    def duplicate: (*_ToS args) -> T
+    def duplicate: (*_ToS args) -> self
 
-    def insert: (*_ToS args) -> T
+    def insert: (*_ToS args) -> self
 
-    def reverse: () -> T
+    def reverse: () -> self
 
-    def swap: (*_ToS args) -> T
+    def swap: (*_ToS args) -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
 
-    def version: () -> T
+    def version: () -> self
 
-    def mattecolor_: (*_ToS args) -> T
+    def mattecolor_: (*_ToS args) -> self
   end
 end
 
 module MiniMagick
-  interface _Stream[T]
-    def authenticate: (*_ToS args) -> T
+  interface _Stream
+    def authenticate: (*_ToS args) -> self
 
-    def colorspace: (*_ToS args) -> T
+    def colorspace: (*_ToS args) -> self
 
-    def compress: (*_ToS args) -> T
+    def compress: (*_ToS args) -> self
 
-    def define: (*_ToS args) -> T
+    def define: (*_ToS args) -> self
 
-    def density: (*_ToS args) -> T
+    def density: (*_ToS args) -> self
 
-    def depth: (*_ToS args) -> T
+    def depth: (*_ToS args) -> self
 
-    def extract: (*_ToS args) -> T
+    def extract: (*_ToS args) -> self
 
-    def identify: () -> T
+    def identify: () -> self
 
-    def interlace: (*_ToS args) -> T
+    def interlace: (*_ToS args) -> self
 
-    def interpolate: (*_ToS args) -> T
+    def interpolate: (*_ToS args) -> self
 
-    def limit: (*_ToS args) -> T
+    def limit: (*_ToS args) -> self
 
-    def map: (*_ToS args) -> T
+    def map: (*_ToS args) -> self
 
-    def monitor: () -> T
+    def monitor: () -> self
 
-    def quantize: (*_ToS args) -> T
+    def quantize: (*_ToS args) -> self
 
-    def quiet: () -> T
+    def quiet: () -> self
 
-    def regard_warnings: () -> T
+    def regard_warnings: () -> self
 
-    def respect_parentheses: (*_ToS args) -> T
+    def respect_parentheses: (*_ToS args) -> self
 
-    def sampling_factor: (*_ToS args) -> T
+    def sampling_factor: (*_ToS args) -> self
 
-    def seed: (*_ToS args) -> T
+    def seed: (*_ToS args) -> self
 
-    def set: (*_ToS args) -> T
+    def set: (*_ToS args) -> self
 
-    def size: (*_ToS args) -> T
+    def size: (*_ToS args) -> self
 
-    def storage_type: (*_ToS args) -> T
+    def storage_type: (*_ToS args) -> self
 
-    def synchronize: () -> T
+    def synchronize: () -> self
 
-    def taint: () -> T
+    def taint: () -> self
 
-    def transparent_color: (*_ToS args) -> T
+    def transparent_color: (*_ToS args) -> self
 
-    def verbose: () -> T
+    def verbose: () -> self
 
-    def virtual_pixel: (*_ToS args) -> T
+    def virtual_pixel: (*_ToS args) -> self
 
-    def channel: (*_ToS args) -> T
+    def channel: (*_ToS args) -> self
 
-    def debug: (*_ToS args) -> T
+    def debug: (*_ToS args) -> self
 
-    def help: () -> T
+    def help: () -> self
 
-    def list: (*_ToS args) -> T
+    def list: (*_ToS args) -> self
 
-    def log: (*_ToS args) -> T
+    def log: (*_ToS args) -> self
 
-    def version: () -> T
+    def version: () -> self
   end
 end
 
 module MiniMagick
-  def self.animate: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Animate[Tool])
-                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Animate[Tool]) -> void } -> String
+  def self.animate: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Animate)
+                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Animate) -> void } -> String
                   | ...
 end
 
 module MiniMagick
-  def self.compare: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Compare[Tool])
-                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Compare[Tool]) -> void } -> String
+  def self.compare: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Compare)
+                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Compare) -> void } -> String
                   | ...
 end
 
 module MiniMagick
-  def self.composite: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Composite[Tool])
-                    | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Composite[Tool]) -> void } -> String
+  def self.composite: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Composite)
+                    | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Composite) -> void } -> String
                     | ...
 end
 
 module MiniMagick
-  def self.conjure: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Conjure[Tool])
-                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Conjure[Tool]) -> void } -> String
+  def self.conjure: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Conjure)
+                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Conjure) -> void } -> String
                   | ...
 end
 
 module MiniMagick
-  def self.convert: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Convert[Tool])
-                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Convert[Tool]) -> void } -> String
+  def self.convert: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Convert)
+                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Convert) -> void } -> String
                   | ...
 end
 
 module MiniMagick
-  def self.display: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Display[Tool])
-                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Display[Tool]) -> void } -> String
+  def self.display: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Display)
+                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Display) -> void } -> String
                   | ...
 end
 
 module MiniMagick
-  def self.identify: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Identify[Tool])
-                   | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Identify[Tool]) -> void } -> String
+  def self.identify: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Identify)
+                   | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Identify) -> void } -> String
                    | ...
 end
 
 module MiniMagick
-  def self.import: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Import[Tool])
-                 | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Import[Tool]) -> void } -> String
+  def self.import: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Import)
+                 | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Import) -> void } -> String
                  | ...
 end
 
 module MiniMagick
-  def self.mogrify: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Mogrify[Tool])
-                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Mogrify[Tool]) -> void } -> String
+  def self.mogrify: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Mogrify)
+                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Mogrify) -> void } -> String
                   | ...
 end
 
 module MiniMagick
-  def self.montage: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Montage[Tool])
-                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Montage[Tool]) -> void } -> String
+  def self.montage: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Montage)
+                  | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Montage) -> void } -> String
                   | ...
 end
 
 module MiniMagick
-  def self.stream: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Stream[Tool])
-                 | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Stream[Tool]) -> void } -> String
+  def self.stream: (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) -> (Tool & _Stream)
+                 | (?errors: bool, ?warnings: bool, ?stdin: _ToS, ?timeout: Integer?, **untyped options) { (Tool & _Stream) -> void } -> String
                  | ...
 end
 
@@ -2426,19 +2426,19 @@ end
 
 module MiniMagick
   class Image
-    def initialize: (_ToS input_path, ?Tempfile? tempfile) ?{ (Tool & _Mogrify[Tool]) -> void } -> void
+    def initialize: (_ToS input_path, ?Tempfile? tempfile) ?{ (Tool & _Mogrify) -> void } -> void
                   | ...
 
-    def combine_options: () { (Tool & _Mogrify[Tool]) -> void } -> self
+    def combine_options: () { (Tool & _Mogrify) -> void } -> self
                        | ...
 
-    def composite: (instance other_image, ?String output_extension, ?untyped? mask) ?{ (Tool & _Composite[Tool]) -> void } -> instance
+    def composite: (instance other_image, ?String output_extension, ?untyped? mask) ?{ (Tool & _Composite) -> void } -> instance
                  | ...
 
-    def identify: () ?{ (Tool & _Identify[Tool]) -> void } -> String
+    def identify: () ?{ (Tool & _Identify) -> void } -> String
                 | ...
 
-    def mogrify: (?Integer? page) ?{ (Tool & _Mogrify[Tool]) -> void } -> self
+    def mogrify: (?Integer? page) ?{ (Tool & _Mogrify) -> void } -> self
                | ...
 
     def adjoin: () -> self

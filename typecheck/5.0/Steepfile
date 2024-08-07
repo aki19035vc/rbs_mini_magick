@@ -3,5 +3,5 @@
 target :test do
   signature "mini_magick.rbs"
 
-  check "test.rb"
+  check "."
 end
