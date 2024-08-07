@@ -1,4 +1,0 @@
-module RbsMiniMagick
-  module ImageMagick
-  end
-end
