@@ -3,6 +3,7 @@ require:
   - rubocop-rake
   - rubocop-rspec
   - rubocop-thread_safety
+  - rubocop-on-rbs
 
 inherit_mode:
   merge:
