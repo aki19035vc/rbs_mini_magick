@@ -88,7 +88,6 @@ desc "Generate and Check code documents"
 task :yard do
   require "yard"
   YARD::CLI::CommandParser.run
-  output = `yard`.lines(chomp: true)
 end
 
 require "rspec/core/rake_task"
