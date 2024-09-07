@@ -1,9 +1,14 @@
+# Generated from lib/rbs_mini_magick/cli.rb with RBS::Inline
+
 module RbsMiniMagick
   class CLI
+    # @rbs (Array[String], io: IO) -> void
     def initialize: (Array[String], io: IO) -> void
 
-    def run: () -> Integer
+    # @rbs () -> void
+    def run: () -> void
 
+    # @rbs () -> String
     def help: () -> String
 
     private
@@ -14,12 +19,16 @@ module RbsMiniMagick
 
     attr_reader io: IO
 
+    # @rbs () -> void
     def parse!: () -> void
 
+    # @rbs () -> OptionParser
     def parser: () -> OptionParser
 
+    # @rbs () -> bool
     def help?: () -> bool
 
+    # @rbs () -> bool
     def version?: () -> bool
   end
 end

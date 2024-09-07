@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
+# rbs_inline: enabled
+
 module RbsMiniMagick
   module ImageMagick
-    # RbsMiniMagick::ImageMagick::UsageFetcher
     class UsageFetcher
-      # @param tool_name [String]
-      # @return [void]
+      # @rbs (tool_name: String) -> void
       def initialize(tool_name:)
         @tool_name = tool_name
       end
 
-      # @return [String]
+      # @rbs () -> String
       def run
         tool = MiniMagick::Tool.new(tool_name)
         tool.help # steep:ignore
@@ -19,9 +19,7 @@ module RbsMiniMagick
 
       private
 
-      # @!attribute [r] tool_name
-      # @return [String]
-      attr_reader :tool_name
+      attr_reader :tool_name #: String
     end
   end
 end

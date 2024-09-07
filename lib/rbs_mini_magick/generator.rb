@@ -1,11 +1,10 @@
 # frozen_string_literal: true
 
+# rbs_inline: enabled
+
 module RbsMiniMagick
-  # RbsMiniMagick::Generator
   class Generator
-    # @param mini_magick_version [String, nil]
-    # @param output_dir [String, nil]
-    # @return [void]
+    # @rbs (mini_magick_version: String?, output_dir: String?) -> void
     def initialize(mini_magick_version:, output_dir:)
       @mini_magick_version = mini_magick_version
       @output_dir = output_dir&.then { Pathname(_1) } ||
@@ -13,7 +12,7 @@ module RbsMiniMagick
       @output_path = @output_dir.join("mini_magick.rbs")
     end
 
-    # @return [void]
+    # @rbs () -> void
     def run
       rbs = Builder.new(mini_magick_version: mini_magick_version).run
       FileUtils.mkdir_p(output_dir.to_s)
@@ -22,14 +21,8 @@ module RbsMiniMagick
 
     private
 
-    # @!attribute [r] mini_magick_version
-    # @return [String, nil]
-    attr_reader :mini_magick_version
-    # @!attribute [r] output_dir
-    # @return [Pathname]
-    attr_reader :output_dir
-    # @!attribute [r] output_path
-    # @return [Pathname]
-    attr_reader :output_path
+    attr_reader :mini_magick_version #: String?
+    attr_reader :output_dir #: Pathname
+    attr_reader :output_path #: Pathname
   end
 end

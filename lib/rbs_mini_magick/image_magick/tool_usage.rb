@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
+# rbs_inline: enabled
+
 module RbsMiniMagick
   module ImageMagick
-    # RbsMiniMagick::ImageMagick::ToolUsage
     class ToolUsage
       class << self
-        # @param name [String]
-        # @param raw_usage [String]
-        # @return [RbsMiniMagick::ImageMagick::ToolUsage]
+        # @rbs (String, String) -> ImageMagick::ToolUsage
         def build_by_raw_usage(name, raw_usage)
           new(
             name: name,
@@ -17,8 +16,7 @@ module RbsMiniMagick
 
         private
 
-        # @param raw_line [String]
-        # @return [RbsMiniMagick::ImageMagick::Option, nil]
+        # @rbs (String) -> Option?
         def build_option_by_raw_line(raw_line)
           splited = raw_line.match(/^\s*(-\S+(?: \S+)*)\s*/)
                             &.then { _1[1] }
@@ -33,16 +31,10 @@ module RbsMiniMagick
         end
       end
 
-      # @!attribute [r] name
-      # @return [String]
-      attr_reader :name
-      # @!attribute [r] options
-      # @return [Array<RbsMiniMagick::ImageMagick::Option>]
-      attr_reader :options
+      attr_reader :name #: String
+      attr_reader :options #: Array[Option]
 
-      # @param name [String]
-      # @param options [Array<RbsMiniMagick::ImageMagick::Option>]
-      # @return [void]
+      # @rbs (name: String, options: Array[Option]) -> void
       def initialize(name:, options:)
         @name = name
         @options = options

@@ -1,18 +1,17 @@
 # frozen_string_literal: true
 
+# rbs_inline: enabled
+
 module RbsMiniMagick
-  # RbsMiniMagick::CLI
   class CLI
-    # @param args [Array<String>]
-    # @param io [::IO]
-    # @return [void]
+    # @rbs (Array[String], io: IO) -> void
     def initialize(args, io:)
       @args = args
       @options = {}
       @io = io
     end
 
-    # @return [Integer]
+    # @rbs () -> void
     def run # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
       parse!
 
@@ -41,31 +40,24 @@ module RbsMiniMagick
       1
     end
 
-    # @return [String]
+    # @rbs () -> String
     def help
       parser.help
     end
 
     private
 
-    # @!attribute [r] args
-    # @return [Array<String>]
-    attr_reader :args
-    # @!attribute [r] options
-    # @return [Hash]
-    attr_reader :options
-    # @!attribute [r] io
-    # @return [::IO]
-    attr_reader :io
+    attr_reader :args #: Array[String]
+    attr_reader :options #: Hash[Symbol, untyped]
+    attr_reader :io #: IO
 
-    # @return [void]
-    # @raise [OptionParser::InvalidOption]
+    # @rbs () -> void
     def parse!
       command = parser.parse(args).first || ""
       @options.merge!(command: command)
     end
 
-    # @return [OptionParser]
+    # @rbs () -> OptionParser
     def parser # rubocop:disable Metrics/MethodLength
       OptionParser.new do |opts|
         opts.banner = "Usage: rbs_mini_magick [command] [options]"
@@ -81,7 +73,7 @@ module RbsMiniMagick
       end
     end
 
-    # @return [Boolean]
+    # @rbs () -> bool
     def help?
       return false unless options.include?(:help)
 
@@ -89,7 +81,7 @@ module RbsMiniMagick
       true
     end
 
-    # @return [Boolean]
+    # @rbs () -> bool
     def version?
       return false unless options.include?(:version)
 

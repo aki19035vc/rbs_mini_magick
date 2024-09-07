@@ -1,10 +1,14 @@
+# Generated from lib/rbs_mini_magick/image_magick/option.rb with RBS::Inline
+
 module RbsMiniMagick
   module ImageMagick
     class Option
       attr_reader normalized_name: String
 
+      # @rbs (name: String, args: Array[String]) -> void
       def initialize: (name: String, args: Array[String]) -> void
 
+      # @rbs () -> bool
       def args_empty?: () -> bool
 
       private
