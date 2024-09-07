@@ -1,19 +1,20 @@
+# Generated from lib/rbs_mini_magick/image_magick/tool_usage.rb with RBS::Inline
+
 module RbsMiniMagick
   module ImageMagick
     class ToolUsage
+      # @rbs (String, String) -> ImageMagick::ToolUsage
       def self.build_by_raw_usage: (String, String) -> ImageMagick::ToolUsage
+
+      # @rbs (String) -> Option?
+      private def self.build_option_by_raw_line: (String) -> Option?
 
       attr_reader name: String
 
       attr_reader options: Array[Option]
 
+      # @rbs (name: String, options: Array[Option]) -> void
       def initialize: (name: String, options: Array[Option]) -> void
-
-      def args_empty?: () -> bool
-
-      private
-
-      def self.build_option_by_raw_line: (String) -> Option?
     end
   end
 end

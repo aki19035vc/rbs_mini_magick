@@ -1,7 +1,11 @@
+# Generated from lib/rbs_mini_magick/generator.rb with RBS::Inline
+
 module RbsMiniMagick
   class Generator
+    # @rbs (mini_magick_version: String?, output_dir: String?) -> void
     def initialize: (mini_magick_version: String?, output_dir: String?) -> void
 
+    # @rbs () -> void
     def run: () -> void
 
     private

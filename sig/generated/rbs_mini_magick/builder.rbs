@@ -1,0 +1,21 @@
+# Generated from lib/rbs_mini_magick/builder.rb with RBS::Inline
+
+module RbsMiniMagick
+  class Builder
+    # @rbs (mini_magick_version: String?) -> void
+    def initialize: (mini_magick_version: String?) -> void
+
+    # @rbs () -> String
+    def run: () -> String
+
+    private
+
+    attr_reader mini_magick_version: Gem::Version
+
+    # @rbs () -> [Array[String], Array[Flows::_Flow]]
+    def tool_names_and_flows: () -> [ Array[String], Array[Flows::_Flow] ]
+
+    # @rbs (Array[String]) -> Array[ImageMagick::ToolUsage]
+    def build_tool_usages: (Array[String]) -> Array[ImageMagick::ToolUsage]
+  end
+end

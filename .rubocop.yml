@@ -3,7 +3,6 @@ require:
   - rubocop-rake
   - rubocop-rspec
   - rubocop-thread_safety
-  - rubocop-on-rbs
 
 inherit_mode:
   merge:
@@ -22,4 +21,13 @@ Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes
 
 Naming/VariableNumber:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/AccessorGrouping:
+  Enabled: false
+
+Layout/LeadingCommentSpace:
   Enabled: false

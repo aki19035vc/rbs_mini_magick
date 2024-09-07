@@ -1,0 +1,5 @@
+# Generated from lib/rbs_mini_magick/version.rb with RBS::Inline
+
+module RbsMiniMagick
+  VERSION: String
+end

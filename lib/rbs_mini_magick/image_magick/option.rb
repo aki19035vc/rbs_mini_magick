@@ -1,35 +1,28 @@
 # frozen_string_literal: true
 
+# rbs_inline: enabled
+
 module RbsMiniMagick
   module ImageMagick
-    # RbsMiniMagick::ImageMagick::Option
     class Option
-      # @!attribute [r] normalized_name
-      # @return [String]
-      attr_reader :normalized_name
+      attr_reader :normalized_name #: String
 
-      # @param name [String]
-      # @param args [Array<String>]
-      # @return [void]
+      # @rbs (name: String, args: Array[String]) -> void
       def initialize(name:, args:)
         @name = name
         @args = args
         @normalized_name = name.delete_prefix("-").gsub(/\W/, "_")
       end
 
-      # @return [Boolean]
+      # @rbs () -> bool
       def args_empty?
         args.empty?
       end
 
       private
 
-      # @!attribute [r] name
-      # @return [String]
-      attr_reader :name
-      # @!attribute [r] args
-      # @return [Array<String>]
-      attr_reader :args
+      attr_reader :name #: String
+      attr_reader :args #: Array[String]
     end
   end
 end
