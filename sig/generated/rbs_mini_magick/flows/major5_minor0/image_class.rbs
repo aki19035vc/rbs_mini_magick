@@ -1,0 +1,19 @@
+# Generated from lib/rbs_mini_magick/flows/major5_minor0/image_class.rb with RBS::Inline
+
+module RbsMiniMagick
+  module Flows
+    module Major5Minor0
+      class ImageClass
+        include _Flow
+
+        # @rbs override
+        def run: ...
+
+        private
+
+        # @rbs (ImageMagick::Option) -> String
+        def mogrify_method: (ImageMagick::Option) -> String
+      end
+    end
+  end
+end

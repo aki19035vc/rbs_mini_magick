@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rbs_inline: enabled
+
 require_relative "major5_minor0/tool_interface"
 require_relative "major5_minor0/tool_singleton"
 require_relative "major5_minor0/tool_subclass"
@@ -7,9 +9,7 @@ require_relative "major5_minor0/image_class"
 
 module RbsMiniMagick
   module Flows
-    # RbsMiniMagick::Flows::Major5Minor0
     module Major5Minor0
-      # @return [String<String>]
       TOOL_NAMES = %w[
         animate
         compare
@@ -22,7 +22,7 @@ module RbsMiniMagick
         mogrify
         montage
         stream
-      ].freeze
+      ].freeze #: Array[String]
       public_constant :TOOL_NAMES
 
       # @return [Array<#run>]
@@ -31,7 +31,7 @@ module RbsMiniMagick
         *TOOL_NAMES.map { ToolSingleton.new(name: _1) },
         *TOOL_NAMES.map { ToolSubclass.new(name: _1) },
         ImageClass.new
-      ].freeze
+      ].freeze #: Array[_Flow]
       public_constant :FLOWS
     end
   end

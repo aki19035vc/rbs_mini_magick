@@ -1,10 +1,16 @@
+# Generated from lib/rbs_mini_magick/flows/major5_minor0/tool_subclass.rb with RBS::Inline
+
 module RbsMiniMagick
   module Flows
     module Major5Minor0
-      class ToolSingleton
+      class ToolSubclass
         include _Flow
 
+        # @rbs (name: String) -> void
         def initialize: (name: String) -> void
+
+        # @rbs override
+        def run: ...
 
         private
 

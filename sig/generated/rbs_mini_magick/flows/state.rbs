@@ -1,16 +1,23 @@
+# Generated from lib/rbs_mini_magick/flows/state.rb with RBS::Inline
+
 module RbsMiniMagick
   module Flows
     class State
+      # @rbs (tool_usages: Array[ImageMagick::ToolUsage]) -> Flows::State
       def self.init: (tool_usages: Array[ImageMagick::ToolUsage]) -> Flows::State
 
       attr_reader tool_usages: Array[ImageMagick::ToolUsage]
 
+      # @rbs (tool_usages: Array[ImageMagick::ToolUsage], rbs: String) -> void
       def initialize: (tool_usages: Array[ImageMagick::ToolUsage], rbs: String) -> void
 
+      # @rbs (String) -> ImageMagick::ToolUsage
       def fetch_tool_usage: (String) -> ImageMagick::ToolUsage
 
+      # @rbs (String) -> Flows::State
       def concat_rbs: (String) -> Flows::State
 
+      # @rbs () -> String
       def formated_rbs: () -> String
 
       private
@@ -19,6 +26,7 @@ module RbsMiniMagick
 
       attr_reader tool_usage_by_name: Hash[String, ImageMagick::ToolUsage]
 
+      # @rbs () -> String
       def format_rbs: () -> String
     end
   end

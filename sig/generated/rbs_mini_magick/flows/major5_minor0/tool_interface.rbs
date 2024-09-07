@@ -1,0 +1,24 @@
+# Generated from lib/rbs_mini_magick/flows/major5_minor0/tool_interface.rb with RBS::Inline
+
+module RbsMiniMagick
+  module Flows
+    module Major5Minor0
+      class ToolInterface
+        include _Flow
+
+        # @rbs (name: String) -> void
+        def initialize: (name: String) -> void
+
+        # @rbs override
+        def run: ...
+
+        private
+
+        attr_reader name: String
+
+        # @rbs (ImageMagick::Option) -> String
+        def option_method: (ImageMagick::Option) -> String
+      end
+    end
+  end
+end
