@@ -54,12 +54,19 @@ def typecheck_any_version(version) # rubocop:disable Metrics/MethodLength
   end
 end
 
+namespace :rbs do
+  desc "Generate rbs by rbs-inline"
+  task :generate do
+    system("bundle", "exec", "rbs-inline", "lib", "--output", chdir: __dir__) || exit(1)
+  end
+end
+
 namespace :typecheck do
   require "steep"
   require "steep/cli"
 
   desc "Typecheck for lib dir"
-  task :lib do
+  task lib: ["rbs:generate"] do
     system("bundle", "exec", "steep", "check", chdir: __dir__) || exit(1)
   end
 
