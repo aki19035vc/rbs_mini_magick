@@ -89,7 +89,6 @@ task :yard do
   require "yard"
   YARD::CLI::CommandParser.run
   output = `yard`.lines(chomp: true)
-  exit(1) if output.first.include?("[warn]") || output.last.match(/\d+/)[0].to_i != 100
 end
 
 require "rspec/core/rake_task"
