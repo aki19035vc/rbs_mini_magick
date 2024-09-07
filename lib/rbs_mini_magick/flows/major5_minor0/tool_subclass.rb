@@ -1,19 +1,20 @@
 # frozen_string_literal: true
 
+# rbs_inline: enabled
+
 module RbsMiniMagick
   module Flows
-    # RbsMiniMagick::Flows::Major5Minor0
     module Major5Minor0
-      # RbsMiniMagick::Flows::Major5Minor0::ToolSubclass
       class ToolSubclass
-        # @param name [String]
-        # @return [void]
+        # @rbs!
+        #  include _Flow
+
+        # @rbs (name: String) -> void
         def initialize(name:)
           @name = name
         end
 
-        # @param state [RbsMiniMagick::Flows::State]
-        # @return [RbsMiniMagick::Flows::State]
+        # @rbs override
         def run(state) # rubocop:disable Metrics/MethodLength
           capitalized_name = name.capitalize
           rbs = <<~RBS
@@ -31,9 +32,7 @@ module RbsMiniMagick
 
         private
 
-        # @!attribute [r] name
-        # @return [String]
-        attr_reader :name
+        attr_reader :name #: String
       end
     end
   end

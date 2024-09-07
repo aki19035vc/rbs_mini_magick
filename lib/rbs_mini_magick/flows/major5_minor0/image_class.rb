@@ -1,13 +1,15 @@
 # frozen_string_literal: true
 
+# rbs_inline: enabled
+
 module RbsMiniMagick
   module Flows
-    # RbsMiniMagick::Flows::Major5Minor0
     module Major5Minor0
-      # RbsMiniMagick::Flows::Major5Minor0::ImageClass
       class ImageClass
-        # @param state [RbsMiniMagick::Flows::State]
-        # @return [RbsMiniMagick::Flows::State]
+        # @rbs!
+        #  include _Flow
+
+        # @rbs override
         def run(state) # rubocop:disable Metrics/MethodLength
           image_instance_methods = MiniMagick::Image.instance_methods.to_set(&:to_s)
           mogrify_methods = state.fetch_tool_usage("mogrify")
@@ -43,8 +45,7 @@ module RbsMiniMagick
 
         private
 
-        # @param option [RbsMiniMagick::ImageMagick::Option]
-        # @return [String]
+        # @rbs (ImageMagick::Option) -> String
         def mogrify_method(option)
           args = option.args_empty? ? "" : "*_ToS args"
           "def #{option.normalized_name}: (#{args}) -> self"

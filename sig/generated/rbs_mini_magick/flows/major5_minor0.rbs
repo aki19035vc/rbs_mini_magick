@@ -1,8 +1,11 @@
+# Generated from lib/rbs_mini_magick/flows/major5_minor0.rb with RBS::Inline
+
 module RbsMiniMagick
   module Flows
     module Major5Minor0
       TOOL_NAMES: Array[String]
 
+      # @return [Array<#run>]
       FLOWS: Array[_Flow]
     end
   end
