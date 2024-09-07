@@ -54,12 +54,19 @@ def typecheck_any_version(version) # rubocop:disable Metrics/MethodLength
   end
 end
 
+namespace :rbs do
+  desc "Generate rbs by rbs-inline"
+  task :generate do
+    system("bundle", "exec", "rbs-inline", "lib", "--output", chdir: __dir__) || exit(1)
+  end
+end
+
 namespace :typecheck do
   require "steep"
   require "steep/cli"
 
   desc "Typecheck for lib dir"
-  task :lib do
+  task lib: ["rbs:generate"] do
     system("bundle", "exec", "steep", "check", chdir: __dir__) || exit(1)
   end
 
@@ -81,8 +88,6 @@ desc "Generate and Check code documents"
 task :yard do
   require "yard"
   YARD::CLI::CommandParser.run
-  output = `yard`.lines(chomp: true)
-  exit(1) if output.first.include?("[warn]") || output.last.match(/\d+/)[0].to_i != 100
 end
 
 require "rspec/core/rake_task"

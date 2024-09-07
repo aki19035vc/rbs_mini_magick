@@ -5,6 +5,7 @@ source "https://rubygems.org"
 gemspec
 
 gem "rake", require: false
+gem "rbs-inline", require: false
 gem "rspec", require: false
 gem "rubocop", require: false
 gem "rubocop-on-rbs", require: false

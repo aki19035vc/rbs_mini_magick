@@ -1,3 +1,5 @@
+# Generated from lib/rbs_mini_magick.rb with RBS::Inline
+
 module RbsMiniMagick
   class Error < StandardError
   end

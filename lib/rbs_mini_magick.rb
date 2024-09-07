@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rbs_inline: enabled
+
 require "bundler"
 require "open3"
 require "optparse"
@@ -16,8 +18,6 @@ require_relative "rbs_mini_magick/builder"
 require_relative "rbs_mini_magick/generator"
 require_relative "rbs_mini_magick/cli"
 
-# RbsMiniMagick
 module RbsMiniMagick
-  # RbsMiniMagick::Error
   class Error < StandardError; end
 end

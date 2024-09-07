@@ -44,6 +44,7 @@ GEM
     parser (3.3.4.0)
       ast (~> 2.4.1)
       racc
+    prism (0.30.0)
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.2.1)
@@ -52,6 +53,9 @@ GEM
       ffi (~> 1.0)
     rbs (3.5.2)
       logger
+    rbs-inline (0.7.0)
+      prism (>= 0.29, < 0.31)
+      rbs (~> 3.5.0)
     regexp_parser (2.9.2)
     rexml (3.3.2)
       strscan
@@ -126,6 +130,7 @@ PLATFORMS
 
 DEPENDENCIES
   rake
+  rbs-inline
   rbs_mini_magick!
   rspec
   rubocop
